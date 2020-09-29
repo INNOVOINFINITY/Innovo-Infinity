@@ -2,6 +2,23 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Nav Bar color Reset */
+.nav a {
+    color: #fff;
+}
+.nav-link::after {
+    background-color: #fff;
+}
+@media screen and (max-width: 745px) {
+    .burger div {
+        background-color: #fff;
+    }
+    .nav-link::after {
+        background-color: #000;
+    }
 }
 
 /*Lanfing page*/
@@ -11,7 +28,7 @@ body {
     
     width: 100%;
     height: 100vh;
-    background: url("landing-pic.jpg") center no-repeat;
+    background: url("/assist/img/team-landing.jpg") center no-repeat;
     background-size: cover;
     overflow: hidden;
     position: relative;
@@ -34,8 +51,8 @@ body {
 .landing-blur {
     position: absolute;
     width: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100vh;
     display: flex;
 }
 /* .about-team h1 {
@@ -57,8 +74,10 @@ body {
 /*Core Team*/
 .core-section {
     position: relative;
-    width: 100%;
+    width: 70%;
+    
     height: 100%;
+    margin: auto;
 }
 
 .card a {
@@ -84,15 +103,14 @@ body {
 .team-border {
     width: 90%;
     height: 1px;
-    margin: 4rem 0;
-    background-color: #d9dbdf;
+    margin: 5rem 5%;
+    background-color: #d6d7da;
 }
 
 .mem-card {
     display: flex;
     flex-wrap: wrap;
-    /* width: 100vh; */
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .card {
@@ -111,7 +129,7 @@ body {
     position: relative;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: unset;
     margin: 2rem 2rem;
     border-radius: .5rem;
 }
@@ -138,7 +156,8 @@ body {
 }
 
  .name {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    text-align: center;
     line-height: 1.5em;
     margin-top: 4.5rem;
     color: #3C4858;
@@ -148,15 +167,16 @@ body {
 
  .role {
     margin-top: 1.5rem;
-    color:red;
+    text-align: center;
     margin-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
     z-index: 1;
 }
  .info {
-    font-size: 14px;
-    color: #999;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(131, 129, 129);
     text-align: center;
 }
 
@@ -170,8 +190,13 @@ body {
     z-index: 1;
 }
 .social i {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 0 1rem;
+}
+
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400;
 }
 
 .fa-facebook-square {
@@ -182,6 +207,12 @@ body {
 }
 .fa-instagram {
     color: #e6683c;
+}
+.fa-linkedin-in {
+    color :#0976b4;
+}
+.fa-github {
+    color: #333333;
 }
 
 
@@ -233,7 +264,7 @@ z-index: 22222222;
 }
 
 .testim .arrow:hover {
-color: #3c4858;
+color: #b7b7b8;
 }
 
 
@@ -299,6 +330,9 @@ top: 0;
 left: 0;
 padding: 0 0 70px 0;
 opacity: 0;
+}
+.testim .cont div .role {
+    font-size: 1.8rem;
 }
 
 .testim .cont > div.inactive {
@@ -762,9 +796,17 @@ animation: testim-content-out .5s ease-in-out forwards;
     }
 }
 
-@media all and (max-width: 300px) {
-    body {
-        font-size: 14px;
+@media screen and (max-width: 800px) {
+    .mem-card .m-card {
+        width: 15rem;
+        justify-content: unset;
+    }
+    .core-section {
+        width: 100%;
+        margin: auto;
+    }
+    .m-card {
+        width: 100%;
     }
 }
 
@@ -788,8 +830,19 @@ animation: testim-content-out .5s ease-in-out forwards;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media all and (max-width: 440px) {
+    .testim .cont div .img img {
+        width: 14rem;
+        height: 14rem;
+    }
+    .testim .cont div h2 {
+        font-size: 2rem;
+    }
+    .testim .cont div .role {
+        font-size: 1.5rem;
+    }
+
     .mem-card .m-card {
-        width: 15rem;
+        width: 90%;
     }
 }
