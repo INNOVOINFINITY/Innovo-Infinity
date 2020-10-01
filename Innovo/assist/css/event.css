@@ -35,7 +35,7 @@ body {
 }
 
 .intro {
-    width: 800px;
+    width: 50%;
     height: 90%;
     z-index: 1;
     position: absolute;
@@ -84,7 +84,10 @@ body {
     .nav a {
         color: #F6F7FA;
     }
-    .burger div {
+    .burger .burger-ele1, .burger-ele3 {
+        background-color: #F6F7FA;
+    }
+    .burger .burger-ele2 {
         background-color: #F6F7FA;
     }
     .landing-event {
@@ -156,6 +159,7 @@ body {
 .do-card {
     display: flex;
     width: 450px;
+    height: max-content;
     flex-direction: column;
     margin: 3rem 3rem;
     padding: 3rem 2rem;

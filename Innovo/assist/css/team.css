@@ -13,8 +13,11 @@ body {
     background-color: #fff;
 }
 @media screen and (max-width: 745px) {
-    .burger div {
-        background-color: #fff;
+    .burger .burger-ele1, .burger-ele3 {
+        background-color: #F6F7FA;
+    }
+    .burger .burger-ele2 {
+        background-color: #F6F7FA;
     }
     .nav-link::after {
         background-color: #000;

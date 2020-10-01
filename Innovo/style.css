@@ -168,8 +168,15 @@ header{
     display: none;
     cursor: pointer;
 }
-.burger div{
+.burger .burger-ele1, .burger-ele3{
     width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.burger .burger-ele2{
+    width: 20px;
     height: 3px;
     background-color: #000;
     margin: 5px;
