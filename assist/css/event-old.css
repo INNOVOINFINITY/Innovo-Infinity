@@ -1,0 +1,100 @@
+*{
+	
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	
+}
+
+.header{
+	height: 100vh;
+	}
+.navbar-style {	
+	box-shadow: 0 5px 10px black;
+}
+
+.icon-bar{
+	background: red;
+}
+.cont{
+	height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    background-image: url('https://images.unsplash.com/photo-1478147427282-58a87a120781?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.heading{
+	font-size: 500%;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+}
+ 
+.card:hover{
+	background:white;
+	color: black;
+	box-shadow: 10px 10px 10px black;
+	transition: 0.3s;
+}
+.ak{
+	margin-top: 25px;
+}
+
+.aaa{
+	text-align: center;
+}
+.akshay{
+	margin-top: 20px;
+
+}
+.aksh{
+    color: white;
+    width: 70%;
+}
+.card-body{
+	box-shadow: 0 4px 8px 0 rgba(5,4,3,0.2);
+}
+.gc{
+color: white;
+display: flex;
+justify-content: center;
+}
+.gc .aksh {
+    margin-top: 2rem;
+    width: 70%;
+}
+.akshs {
+    font-size: 1.8rem;
+}
+.YUI{
+	margin-top: 30px
+}
+.ank{
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 20px;
+    margin-left: auto;
+    margin-top: 20px;
+}
+.cards {
+    margin-top: 3rem;
+}
+.burger { 
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
