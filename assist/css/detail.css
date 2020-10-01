@@ -32,7 +32,7 @@ body {
     margin: 6.6rem auto auto auto;
     border-radius: 1rem;
     padding: 0 5%;
-    background: url("/assist/img/sandeep.jpeg") center no-repeat;
+    background: url("../img/sandeep.jpeg") center no-repeat;
     background-size: contain;
     background-color: #101F40;
     display: flex;
