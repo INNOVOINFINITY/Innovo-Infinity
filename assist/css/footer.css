@@ -162,9 +162,12 @@
     text-align: center;
   }
   
-  
+  .social-links a {
+    text-decoration: none;
+  }
   .social-links img {
       margin-right: 15px;
+      margin-bottom: 1rem;
   }
   .footer-links h4 {
     font-size: 2rem;
