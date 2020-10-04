@@ -1,5 +1,4 @@
 # Innovo-Infinity
-This is incomplete site create up till now, use it for reference
 
 This is our final websites version 1
 
