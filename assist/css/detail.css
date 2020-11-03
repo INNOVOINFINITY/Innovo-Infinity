@@ -77,13 +77,13 @@ body {
     margin: -6rem auto 10rem auto;
     width: 90%;
 }
-.event-info, .event-topic, .event-when {
+.event-info, .event-topic, .event-when, .event-winner {
     margin: 4rem;
     background-color: #fff;
     border-radius: 1rem;
     padding: 4rem;
 }
-.event-details .event-name, .topic-name {
+.event-details .event-name, .topic-name, .winner-name {
     margin-bottom: 2rem;
     font-size: 4rem;
     font-weight: 900;
@@ -107,6 +107,29 @@ body {
     line-height: 3rem;
     text-align: justify;
     margin-bottom: 4rem;
+}
+
+.winner-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    justify-content: space-evenly;
+}
+.winner-imgs {
+    width: 25%;
+    min-width: 300px;
+    border-radius: 6px;
+    margin-bottom: 3rem;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.winner-imgs .winner-img {
+    max-width: 100%;
+    border-radius: 6px;
+    background-size: auto;
+    transition: all 200ms ease-in ;
+}
+.winner-img:hover{
+    transform: scale(1.4);
 }
 
 .event-when {
@@ -207,14 +230,23 @@ body {
         width: 100%;
         margin: 0 0 2rem 0;
     }
-    .event-info, .event-topic, .event-when {
+
+    .winner-imgs {
+        width: 90%;
+        min-width: 200px;
+    }
+    .winner-img:hover {
+        transform: scale(1);
+    }
+
+    .event-info, .event-topic, .event-when, .event-winner {
         margin: 0;
         padding: 2rem;
     }
     .event-topic, .event-when {
         margin: 2rem 0 0 0;
     }
-    .event-details .event-name, .topic-name {
+    .event-details .event-name, .topic-name, .winner-name{
         font-size: 2.5rem;
     }
     .event-details .event-para, .topic-para {
