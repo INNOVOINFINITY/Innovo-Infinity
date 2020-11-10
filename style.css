@@ -308,7 +308,7 @@ header{
 
 /*Meet Team Code*/
 #meet-section{
-    background: url('assist/img/Meet-Team/meet-img.svg') no-repeat left;
+    background: url('assets/img/Meet-Team/meet-img.svg') no-repeat left;
     background-size: 45%;
     overflow: hidden;
     padding: 20px 0;
