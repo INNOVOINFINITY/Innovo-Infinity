@@ -80,16 +80,16 @@
     margin: 1rem;
 } */
 
-
 #footer {
     background-color: #F6F7FA;
     display: block;
     /* color: #fff; */
     font-size: 14px;
     position: relative;
-  }
-  
-  /* #footer::before {
+}
+
+
+/* #footer::before {
     content: "";
     position: absolute;
     left: 0;
@@ -99,91 +99,103 @@
     background: rgba(0, 0, 0, 0.85);
     z-index: 1;
   } */
-  
-  #footer .footer-top {
+
+#footer .footer-top {
     position: relative;
     z-index: 2;
     text-align: center;
-    padding: 40px 0;    
-  }
-  
-  #footer .footer-top .footer-newsletter {
+    padding: 40px 0;
+}
+
+#footer .footer-top .footer-newsletter {
     margin-bottom: 30px;
-  }
-  
-  #footer .footer-top .footer-newsletter {
+}
+
+#footer .footer-top .footer-newsletter {
     text-align: center;
     font-size: 15px;
     margin-top: 3px;
-  }
-  
-  #footer .footer-bottom {
+}
+
+#footer .footer-bottom {
     /* border-top: 1px solid #222222; */
     z-index: 2;
     position: relative;
     padding-top: 1rem;
     padding-bottom: 2rem;
-  }
-  #footer .footer-top .footer-links {
+}
+
+#footer .footer-top .footer-links {
     margin-bottom: 30px;
-  }
-  
-  #footer .footer-top .footer-links ul {
+}
+
+#footer .footer-top .footer-links ul {
     list-style: none;
     padding: 5px 0 0 0;
     margin: 0;
-  }
-  
-  #footer .footer-top .footer-links ul li {
+}
+
+#footer .footer-top .footer-links ul li {
     padding: 0 0 15px 0;
-    font-style:normal;
-  }
-  
-  #footer .footer-top .footer-links ul a {
+    font-style: normal;
+}
+
+#footer .footer-top .footer-links ul a {
     color: #8898aa;
     font-size: 1.8rem;
     line-height: 2.2rem;
     background-color: transparent;
     transition: color 200ms ease;
-  }
-  
-  #footer .footer-top .footer-links ul a:hover {
+}
+
+#footer .footer-top .footer-links ul a:hover {
     color: #475d75;
-  }
-  #footer .footer-top .footer-contact {
+}
+
+#footer .footer-top .footer-contact {
     margin-bottom: 30px;
-    font-style:normal;
-  }
-  
-  #footer .footer-top .footer-contact p {
+    font-style: normal;
+}
+
+#footer .footer-top .footer-contact p {
     line-height: 26px;
-  }
-  #footer .copyright {
+}
+
+#footer .copyright {
     text-align: center;
-  }
-  
-  .social-links a {
+}
+
+.social-links a {
     text-decoration: none;
-  }
-  .social-links img {
-      margin-right: 15px;
-      margin-bottom: 1rem;
-  }
-  .footer-links h4 {
+}
+
+.social-links img {
+    margin-right: 15px;
+    margin-bottom: 1rem;
+}
+
+.footer-links h4 {
     font-size: 2rem;
     font-weight: 600;
     line-height: 2.2rem;
     color: #333;
-  }
-  .footer-newsletter h4 {
+}
+
+.footer-newsletter h4 {
     font-size: 2rem;
     font-weight: 600;
     line-height: 2.2rem;
     color: #333;
-  }
-  .footer-newsletter p {
+}
+
+.footer-newsletter p {
     color: #475d75;
     font-size: 1.8rem;
     line-height: 2.2rem;
     background-color: transparent;
-  }
+}
+
+.footer-top .container {
+    display: flex;
+    justify-content: space-between;
+}

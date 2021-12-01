@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home | Innovo Infinity</title>
 
@@ -14,21 +14,28 @@
     <link rel="stylesheet" href="assets/css/about.css">
     <link rel="stylesheet" href="assets/css/landing.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    
-    
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
 
         <!-- Desktop Navbar-->
         <div class="nav-container">
             <nav class="nav">
-                <div class="header-logo"><a href="index.html"><img src="assets/img/logo-pic.png" alt="logo"></a></div>
-                <a href="index.html" class="logo">INNOVO INFINITY</a>
+                <div class="header-logo">
+                    <a href="index.html"><img src="assets/img/logo-pic.png" alt="logo"></a>
+                </div>
+                <div class="club_heading">
+                    <a href="index.html" class="logo">INNOVO INFINITY</a>
+                </div>
                 <ul class="nav-list">
                     <li>
                         <a href="index.html" class="nav-link">Home</a>
@@ -51,33 +58,51 @@
                     <div class="burger-ele2"></div>
                     <div class="burger-ele3"></div>
                 </div>
-                
+
             </nav>
         </div>
     </header>
 
     <!-- Landing Page  Section-->
     <section class="landing-page">
-            <div class="intro" data-aos="fade-up">
-                <h1>Innovo Infinity </h1>
-                <h3>Club</h3>
-                <p>"Creative minds think alike"</p>        
-                <a href="https://bit.ly/3itTKO8" class="landing-btn">Join Us</a>
-            </div>
+        <div class="intro" data-aos="fade-up">
+            <h1>Innovo Infinity </h1>
+            <h3>Club</h3>
+            <p>"Creative minds think alike"</p>
+            <a href="https://bit.ly/3itTKO8" class="landing-btn">Join Us</a>
+        </div>
     </section>
 
     <!-- About Us Section-->
-    <div id="about-section">
-        <div class="inner-container" data-aos="fade-left">
-            <h1>About Us</h1>
-            <p class="text">
-                Chasing your passion and glorifying your future is our aim. Our club is
-                 accessible by all who want to strengthen their technical skills and coding skills and 
-                enhance software development skills by gaining industrial knowledge and entering new era of technologies.
-            </p>
-            <a href="#" id="about-btn">Learn More</a>
+    <section id="about-section">
+        <div style="display: flex;justify-content: center; margin-bottom: 60px; margin-top: 40px;" class="heading">
+            <h1 style="font-size: 40px;">About Us</h1>
         </div>
-    </div>
+        <div class="about_section">
+            <div class="about-img">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img style="height: 300px; border-radius: 10px;" src="./assets/img/contest-winner/glitch-1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img style="height: 300px; border-radius: 10px;" src="./assets/img/contest-winner/glitch-2.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img style="height: 300px; border-radius: 10px;" src="./assets/img/contest-winner/glitch-3.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-container about_content" data-aos="fade-left">
+                <p style="font-size: 2rem;" class="text">
+                    Chasing your passion and glorifying your future is our aim. Our club is accessible by all who want to strengthen their technical skills and coding skills and enhance software development skills by gaining industrial knowledge and entering new era of technologies.
+                </p>
+                <a href="#" id="about-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
 
     <!-- What we do?  Section-->
     <section class="what-we-do">
@@ -87,18 +112,16 @@
                 <img class="do-img" src="assets/img/what-we-do/develop.svg" alt="">
                 <div class="do-info">
                     <h1 class="do-name">Development</h1>
-                    <p class="do-detail">We have gotten a fantastic start to the club website, and we have
-                         many projects on the horizon! Our next major effort will be redesigning a website 
-                         for a club on campus and continuing to improve our own site.</p>
+                    <p class="do-detail">We have gotten a fantastic start to the club website, and we have many projects on the horizon! Our next major effort will be redesigning a website for a club on campus and continuing to improve our own site.</p>
                 </div>
             </div>
             <div class="do-card" onclick="location.href='assets/html/event.html#contest'">
                 <img class="do-img" src="assets/img/what-we-do/programming.svg" alt="">
                 <div class="do-info">
                     <h1 class="do-name">Programming</h1>
-                    <p class="do-detail">The Competitive Programming Club is about doing ridiculously difficult problems within
-                         unfairly short time limits. Our focus is To improve the ability of our members in implementing algorithms using programming languages such as C++ and Java.
-                        </p>
+                    <p class="do-detail">The Competitive Programming Club is about doing ridiculously difficult problems within unfairly short time limits. Our focus is To improve the ability of our members in implementing algorithms using programming languages such as C++
+                        and Java.
+                    </p>
                 </div>
             </div>
             <div class="do-card" onclick="location.href='assets/html/event.html#tech'">
@@ -112,8 +135,8 @@
                 <img class="do-img" src="assets/img/what-we-do/webinar.svg" alt="">
                 <div class="do-info">
                     <h1 class="do-name">Webinars</h1>
-                    <p class="do-detail">We Host various webinars/Hands-on workshops which helps the students to learn various new technical skills trending in the field of technology .
-                        Our utmost aim is to reach every student and provide them the best assetsance from our side which will help them grow and stay updated.</p>
+                    <p class="do-detail">We Host various webinars/Hands-on workshops which helps the students to learn various new technical skills trending in the field of technology . Our utmost aim is to reach every student and provide them the best assetsance from our
+                        side which will help them grow and stay updated.</p>
                 </div>
             </div>
         </div>
@@ -141,67 +164,67 @@
         </div>
     </section>
 
-    <footer id="footer">
+    <footer id="footer" style="background-color: black;">
 
-        <div class="footer-top">
-    
-          <div class="container" data-aos="fade-up">
-           
-    <div class="col-lg-4 col-md-6 footer-links">
-                <h4> Links</h4>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="index.html#about-section">About us</a></li>
-                  <li><a href="assets/html/event.html">Events</a></li>
-                  <li><a href="assets/html/team.html">Our team</a></li>
-                </ul>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 footer-newsletter" style="font-style:normal;">
-                <h4>Our College</h4>
-                <p>
-                 G.L. Bajaj Institute of Technology and Management<br>
-                 Plot No. 2, Knowledge Park III, Greater Noida, Uttar Pradesh 201306<br>
-                 India
-                </p>
-          </div>
-           <div class="col-lg-4 col-md-6 footer-newsletter" style="font-style:normal;">
-                <h4>Follow Us On</h4>
-                
-                <div class="social-links list-unstyled">
-                    
-                <a href="https://www.linkedin.com/company/innovo-infinity">
-                  <img src="assets/fonts/Footer-icon/ln.png" width="35px" height="35px">
-                </a>
-                <a href="https://github.com/innovo-infinity">
-                  <img src="assets/fonts/Footer-icon/github.png" width="35px" height="35px">
-                </a>
-                <a href="https://twitter.com/innovo_infinity/">
-                    <img src="assets/fonts/Footer-icon/twitter.png" width="45px" height="35px">
-                </a>
-                <a href="https://www.instagram.com/innovo_infinity/">
-                  <img src="assets/fonts/Footer-icon/insta.png" width="35px" height="35px">
-                </a>
-                <a href="https://www.facebook.com/innovo.infinity/">
-                  <img src="assets/fonts/Footer-icon/fb.png" width="35px" height="35px">
-                </a>
-                <a href="https://youtube.com/channel/UCzqg7cLOQgYCosD5P-ahuPA">
-                  <img src="assets/fonts/Footer-icon/yt.png" width="40px" height="35px">
-                </a>
-              </div>
-          </div>
-        </div>
-    
-        <div class="container footer-bottom clearfix">
-          <div class="copyright">
-           <i> &copy; Copyright <strong><span>INNOVO INFINITY</span></strong>. All Rights Reserved</i>
-          </div>
-         
-      </footer><!-- End Footer -->
+        <div style="padding-bottom: 0;" class="footer-top">
+
+            <div class="container" data-aos="fade-up">
+
+                <!-- <div class="col-lg-4 col-md-6 footer-links">
+                    <h4> Links</h4>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../index.html#about-section">About us</a></li>
+                        <li><a href="event.html">Events</a></li>
+                        <li><a href="team.html">Our team</a></li>
+                    </ul>
+                </div> -->
+
+                <div class="col-lg-4 col-md-6 footer-newsletter" style="font-style:normal;">
+                    <h4 style="color: #a9a9a9; margin-bottom: 30px;"> Our College</h4>
+                    <p style="color: white;">
+                        G.L. Bajaj Institute of Technology and Management<br> Plot No. 2, Knowledge Park III, Greater Noida, Uttar Pradesh 201306<br> India
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 footer-newsletter" style="font-style:normal;">
+                    <h4 style="color: #a9a9a9; margin-bottom: 30px;">Follow Us On</h4>
+
+                    <div class="social-links list-unstyled">
+
+                        <a href="https://www.linkedin.com/company/innovo-infinity">
+                            <img src="./assets/fonts/Footer-icon/ln.png" width="35px" height="35px">
+                        </a>
+                        <a href="https://github.com/innovo-infinity">
+                            <img style="background-color: white; border-radius: 50%;" src="./assets/fonts/Footer-icon/github.png" width="35px" height="35px">
+                        </a>
+                        <a href="https://twitter.com/innovo_infinity/">
+                            <img src="./assets/fonts/Footer-icon/twitter.png" width="45px" height="35px">
+                        </a>
+                        <a href="https://www.instagram.com/innovo_infinity/">
+                            <img src="./assets/fonts/Footer-icon/insta.png" width="35px" height="35px">
+                        </a>
+                        <a href="https://www.facebook.com/innovo.infinity/">
+                            <img src="./assets/fonts/Footer-icon/fb.png" width="35px" height="35px">
+                        </a>
+                        <a href="https://youtube.com/channel/UCzqg7cLOQgYCosD5P-ahuPA">
+                            <img src="./assets/fonts/Footer-icon/yt.png" width="40px" height="35px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container footer-bottom clearfix">
+                <div class="copyright" style="color: white;">
+                    <i> &copy; Copyright <strong><span>INNOVO INFINITY</span></strong>. All Rights Reserved</i>
+                </div>
+
+    </footer>
+    <!-- End Footer -->
 
     <script src="assets/javaScript/nav.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
+
 </html>

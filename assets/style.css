@@ -117,6 +117,7 @@ header {
 
 .scrolling-active .nav {
     height: 7.2rem;
+    background-color: black;
 }
 
 .scrolling-active .nav a {
@@ -236,21 +237,6 @@ header {
         width: 85px;
         height: 35px;
         line-height: 35px;
-    }
-    .scrolling-active .nav a {
-        color: black;
-    }
-    .footer-top .container {
-        flex-direction: column;
-    }
-    .scrolling-active .club_heading a {
-        color: white;
-    }
-    .scrolling-active #nav-join {
-        background-color: #777777a1;
-    }
-    .scrolling-active .burger div {
-        background-color: #f8f9fa;
     }
 }
 

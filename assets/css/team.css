@@ -1,19 +1,25 @@
-
 body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* Nav Bar color Reset */
-.nav a {
+
+
+/* .nav a {
     color: #fff;
-}
-.nav-link::after {
+} */
+
+
+/* .nav-link::after {
     background-color: #fff;
-}
+} */
+
 @media screen and (max-width: 745px) {
-    .burger .burger-ele1, .burger-ele3 {
+    .burger .burger-ele1,
+    .burger-ele3 {
         background-color: #F6F7FA;
     }
     .burger .burger-ele2 {
@@ -22,13 +28,36 @@ body {
     .nav-link::after {
         background-color: #000;
     }
+    .footer-top .container {
+        flex-direction: column;
+    }
+    .nav a {
+        color: black;
+    }
 }
 
+.nav a {
+    color: white;
+}
+
+.scrolling-active .nav a {
+    color: white;
+}
+
+.scrolling-active #nav-join {
+    background-color: #777777a1;
+}
+
+.scrolling-active .burger div {
+    background-color: #f8f9fa;
+}
+
+
 /*Lanfing page*/
-.team-landing::after{
+
+.team-landing::after {
     content: '';
     display: block;
-    
     width: 100%;
     height: 100vh;
     background: url("../img/team-landing.jpg") center no-repeat;
@@ -51,6 +80,7 @@ body {
     z-index: 100;
     text-align: center;
 }
+
 .landing-blur {
     position: absolute;
     width: 100%;
@@ -58,6 +88,8 @@ body {
     height: 100vh;
     display: flex;
 }
+
+
 /* .about-team h1 {
     color: #fff;
     font-size: 5rem;
@@ -73,14 +105,17 @@ body {
 } */
 
 
-
 /*Core Team*/
+
 .core-section {
     position: relative;
     width: 70%;
-    
     height: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card a {
@@ -88,10 +123,10 @@ body {
     color: #fff;
 }
 
-
 .core-section .title {
     font-size: 5rem;
-    padding: 10rem 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: block;
     text-align: center;
 }
@@ -103,6 +138,7 @@ body {
     margin: auto;
     width: 100%;
 }
+
 .team-border {
     width: 90%;
     height: 1px;
@@ -123,9 +159,10 @@ body {
     align-items: center;
     justify-content: center;
     margin: 2rem 2rem;
-    border: none;
+    border: none !important;
     line-height: 1.5;
 }
+
 .m-card {
     width: 30rem;
     display: flex;
@@ -146,7 +183,6 @@ body {
     overflow: hidden;
     /* background: transparent; */
     border: none;
-    
 }
 
 .pro-img {
@@ -158,7 +194,7 @@ body {
     margin-top: 0;
 }
 
- .name {
+.name {
     font-size: 1.6rem;
     text-align: center;
     line-height: 1.5em;
@@ -168,7 +204,7 @@ body {
     font-weight: 700;
 }
 
- .role {
+.role {
     margin-top: 1.5rem;
     text-align: center;
     margin-bottom: 2rem;
@@ -176,7 +212,8 @@ body {
     font-weight: 500;
     z-index: 1;
 }
- .info {
+
+.info {
     font-size: 1.4rem;
     font-weight: 500;
     color: rgb(131, 129, 129);
@@ -192,6 +229,7 @@ body {
     margin-top: 1.5rem;
     z-index: 1;
 }
+
 .social i {
     font-size: 2.2rem;
     margin: 0 1rem;
@@ -205,22 +243,22 @@ body {
 .fa-facebook-square {
     color: #3b5099;
 }
+
 .fa-twitter-square {
     color: #55acee;
 }
+
 .fa-instagram {
     color: #e6683c;
 }
+
 .fa-linkedin-in {
-    color :#0976b4;
+    color: #0976b4;
 }
+
 .fa-github {
     color: #333333;
 }
-
-
-
-
 
 .testim {
     /* width: 100%; */
@@ -234,32 +272,32 @@ body {
 }
 
 .testim .wrap {
-position: relative;
-width: 100%;
-max-width: 1020px;
-padding: 40px 20px;
-margin: auto;
+    position: relative;
+    width: 100%;
+    max-width: 1020px;
+    padding: 40px 20px;
+    margin: auto;
 }
 
 .testim .arrow {
-display: block;
-position: absolute;
-color: #eee;
-cursor: pointer;
-font-size: 2.2em;
-top: 50%;
--webkit-transform: translateY(-50%);
+    display: block;
+    position: absolute;
+    color: #eee;
+    cursor: pointer;
+    font-size: 2.2em;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
--webkit-transition: all .3s ease-in-out;    
--ms-transition: all .3s ease-in-out;    
--moz-transition: all .3s ease-in-out;    
--o-transition: all .3s ease-in-out;    
-transition: all .3s ease-in-out;
-padding: 5px;
-z-index: 22222222;
+    -webkit-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    padding: 5px;
+    z-index: 22222222;
 }
 
 .testim .arrow:before {
@@ -267,158 +305,156 @@ z-index: 22222222;
 }
 
 .testim .arrow:hover {
-color: #b7b7b8;
+    color: #b7b7b8;
 }
 
-
 .testim .arrow.left {
-left: 10px;
+    left: 10px;
 }
 
 .testim .arrow.right {
-right: 10px;
+    right: 10px;
 }
 
 .testim .dots {
-text-align: center;
-position: absolute;
-width: 100%;
-bottom: 60px;
-left: 0;
-display: block;
-z-index: 3333;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 60px;
+    left: 0;
+    display: block;
+    z-index: 3333;
     height: 12px;
 }
 
 .testim .dots .dot {
-list-style-type: none;
-display: inline-block;
-width: 12px;
-height: 12px;
-border-radius: 50%;
-border: 2px solid #eee;
-margin: 0 10px;
-cursor: pointer;
--webkit-transition: all .5s ease-in-out;    
--ms-transition: all .5s ease-in-out;    
--moz-transition: all .5s ease-in-out;    
--o-transition: all .5s ease-in-out;    
-transition: all .5s ease-in-out;
+    list-style-type: none;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #eee;
+    margin: 0 10px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
     position: relative;
 }
 
 .testim .dots .dot.active,
 .testim .dots .dot:hover {
-background: #3c4858;
-border-color: #3c4858;
+    background: #3c4858;
+    border-color: #3c4858;
 }
 
 .testim .dots .dot.active {
--webkit-animation: testim-scale .5s ease-in-out forwards;   
--moz-animation: testim-scale .5s ease-in-out forwards;   
--ms-animation: testim-scale .5s ease-in-out forwards;   
--o-animation: testim-scale .5s ease-in-out forwards;   
-animation: testim-scale .5s ease-in-out forwards;   
+    -webkit-animation: testim-scale .5s ease-in-out forwards;
+    -moz-animation: testim-scale .5s ease-in-out forwards;
+    -ms-animation: testim-scale .5s ease-in-out forwards;
+    -o-animation: testim-scale .5s ease-in-out forwards;
+    animation: testim-scale .5s ease-in-out forwards;
 }
 
 .testim .cont {
-position: relative;
+    position: relative;
     overflow: hidden;
 }
 
-.testim .cont > div {
-text-align: center;
-position: absolute;
-top: 0;
-left: 0;
-padding: 0 0 70px 0;
-opacity: 0;
+.testim .cont>div {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 0 70px 0;
+    opacity: 0;
 }
+
 .testim .cont div .role {
     font-size: 1.8rem;
 }
 
-.testim .cont > div.inactive {
-opacity: 1;
+.testim .cont>div.inactive {
+    opacity: 1;
 }
 
-
-.testim .cont > div.active {
-position: relative;
-opacity: 1;
+.testim .cont>div.active {
+    position: relative;
+    opacity: 1;
 }
-
 
 .testim .cont div .img img {
-display: block;
-width: 18rem;
-height: 18rem;
-margin: auto;
-border-radius: 50%;
+    display: block;
+    width: 18rem;
+    height: 18rem;
+    margin: auto;
+    border-radius: 50%;
 }
 
 .testim .cont div h2 {
-color: #fff;
-font-size: 3.2em;
-font-weight: bold;
-text-shadow: 1px 1px #3C4858;
-margin: 15px 0;
+    color: #fff;
+    font-size: 3.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px #3C4858;
+    margin: 15px 0;
 }
 
 .testim .cont div p {
-font-size: 1.9em;
-color: #eee;
-text-shadow: 1px 1px black;
-width: 80%;
-margin: auto;
+    font-size: 1.9em;
+    color: #eee;
+    text-shadow: 1px 1px black;
+    width: 80%;
+    margin: auto;
 }
 
 .testim .cont div.active .img img {
--webkit-animation: testim-show .5s ease-in-out forwards;            
--moz-animation: testim-show .5s ease-in-out forwards;            
--ms-animation: testim-show .5s ease-in-out forwards;            
--o-animation: testim-show .5s ease-in-out forwards;            
-animation: testim-show .5s ease-in-out forwards;            
+    -webkit-animation: testim-show .5s ease-in-out forwards;
+    -moz-animation: testim-show .5s ease-in-out forwards;
+    -ms-animation: testim-show .5s ease-in-out forwards;
+    -o-animation: testim-show .5s ease-in-out forwards;
+    animation: testim-show .5s ease-in-out forwards;
 }
 
 .testim .cont div.active h2 {
--webkit-animation: testim-content-in .4s ease-in-out forwards;    
--moz-animation: testim-content-in .4s ease-in-out forwards;    
--ms-animation: testim-content-in .4s ease-in-out forwards;    
--o-animation: testim-content-in .4s ease-in-out forwards;    
-animation: testim-content-in .4s ease-in-out forwards;    
+    -webkit-animation: testim-content-in .4s ease-in-out forwards;
+    -moz-animation: testim-content-in .4s ease-in-out forwards;
+    -ms-animation: testim-content-in .4s ease-in-out forwards;
+    -o-animation: testim-content-in .4s ease-in-out forwards;
+    animation: testim-content-in .4s ease-in-out forwards;
 }
 
 .testim .cont div.active p {
--webkit-animation: testim-content-in .5s ease-in-out forwards;    
--moz-animation: testim-content-in .5s ease-in-out forwards;    
--ms-animation: testim-content-in .5s ease-in-out forwards;    
--o-animation: testim-content-in .5s ease-in-out forwards;    
-animation: testim-content-in .5s ease-in-out forwards;    
+    -webkit-animation: testim-content-in .5s ease-in-out forwards;
+    -moz-animation: testim-content-in .5s ease-in-out forwards;
+    -ms-animation: testim-content-in .5s ease-in-out forwards;
+    -o-animation: testim-content-in .5s ease-in-out forwards;
+    animation: testim-content-in .5s ease-in-out forwards;
 }
 
 .testim .cont div.inactive .img img {
--webkit-animation: testim-hide .5s ease-in-out forwards;            
--moz-animation: testim-hide .5s ease-in-out forwards;            
--ms-animation: testim-hide .5s ease-in-out forwards;            
--o-animation: testim-hide .5s ease-in-out forwards;            
-animation: testim-hide .5s ease-in-out forwards;            
+    -webkit-animation: testim-hide .5s ease-in-out forwards;
+    -moz-animation: testim-hide .5s ease-in-out forwards;
+    -ms-animation: testim-hide .5s ease-in-out forwards;
+    -o-animation: testim-hide .5s ease-in-out forwards;
+    animation: testim-hide .5s ease-in-out forwards;
 }
 
 .testim .cont div.inactive h2 {
--webkit-animation: testim-content-out .4s ease-in-out forwards;        
--moz-animation: testim-content-out .4s ease-in-out forwards;        
--ms-animation: testim-content-out .4s ease-in-out forwards;        
--o-animation: testim-content-out .4s ease-in-out forwards;        
-animation: testim-content-out .4s ease-in-out forwards;        
+    -webkit-animation: testim-content-out .4s ease-in-out forwards;
+    -moz-animation: testim-content-out .4s ease-in-out forwards;
+    -ms-animation: testim-content-out .4s ease-in-out forwards;
+    -o-animation: testim-content-out .4s ease-in-out forwards;
+    animation: testim-content-out .4s ease-in-out forwards;
 }
 
 .testim .cont div.inactive p {
--webkit-animation: testim-content-out .5s ease-in-out forwards;    
--moz-animation: testim-content-out .5s ease-in-out forwards;    
--ms-animation: testim-content-out .5s ease-in-out forwards;    
--o-animation: testim-content-out .5s ease-in-out forwards;    
-animation: testim-content-out .5s ease-in-out forwards;    
+    -webkit-animation: testim-content-out .5s ease-in-out forwards;
+    -moz-animation: testim-content-out .5s ease-in-out forwards;
+    -ms-animation: testim-content-out .5s ease-in-out forwards;
+    -o-animation: testim-content-out .5s ease-in-out forwards;
+    animation: testim-content-out .5s ease-in-out forwards;
 }
 
 @-webkit-keyframes testim-scale {
@@ -426,20 +462,17 @@ animation: testim-content-out .5s ease-in-out forwards;
         -webkit-box-shadow: 0px 0px 0px 0px #eee;
         box-shadow: 0px 0px 0px 0px #eee;
     }
-
     35% {
-        -webkit-box-shadow: 0px 0px 10px 5px #eee;        
-        box-shadow: 0px 0px 10px 5px #eee;        
+        -webkit-box-shadow: 0px 0px 10px 5px #eee;
+        box-shadow: 0px 0px 10px 5px #eee;
     }
-
     70% {
-        -webkit-box-shadow: 0px 0px 10px 5px #3c4858;        
-        box-shadow: 0px 0px 10px 5px #3c4858;        
+        -webkit-box-shadow: 0px 0px 10px 5px #3c4858;
+        box-shadow: 0px 0px 10px 5px #3c4858;
     }
-
     100% {
-        -webkit-box-shadow: 0px 0px 0px 0px #3c4858;        
-        box-shadow: 0px 0px 0px 0px #3c4858;        
+        -webkit-box-shadow: 0px 0px 0px 0px #3c4858;
+        box-shadow: 0px 0px 0px 0px #3c4858;
     }
 }
 
@@ -448,20 +481,17 @@ animation: testim-content-out .5s ease-in-out forwards;
         -moz-box-shadow: 0px 0px 0px 0px #eee;
         box-shadow: 0px 0px 0px 0px #eee;
     }
-
     35% {
-        -moz-box-shadow: 0px 0px 10px 5px #eee;        
-        box-shadow: 0px 0px 10px 5px #eee;        
+        -moz-box-shadow: 0px 0px 10px 5px #eee;
+        box-shadow: 0px 0px 10px 5px #eee;
     }
-
     70% {
-        -moz-box-shadow: 0px 0px 10px 5px #3c4858;        
-        box-shadow: 0px 0px 10px 5px #3c4858;        
+        -moz-box-shadow: 0px 0px 10px 5px #3c4858;
+        box-shadow: 0px 0px 10px 5px #3c4858;
     }
-
     100% {
-        -moz-box-shadow: 0px 0px 0px 0px #3c4858;        
-        box-shadow: 0px 0px 0px 0px #3c4858;        
+        -moz-box-shadow: 0px 0px 0px 0px #3c4858;
+        box-shadow: 0px 0px 0px 0px #3c4858;
     }
 }
 
@@ -470,20 +500,17 @@ animation: testim-content-out .5s ease-in-out forwards;
         -ms-box-shadow: 0px 0px 0px 0px #eee;
         box-shadow: 0px 0px 0px 0px #eee;
     }
-
     35% {
-        -ms-box-shadow: 0px 0px 10px 5px #eee;        
-        box-shadow: 0px 0px 10px 5px #eee;        
+        -ms-box-shadow: 0px 0px 10px 5px #eee;
+        box-shadow: 0px 0px 10px 5px #eee;
     }
-
     70% {
-        -ms-box-shadow: 0px 0px 10px 5px #3c4858;        
-        box-shadow: 0px 0px 10px 5px #3c4858;        
+        -ms-box-shadow: 0px 0px 10px 5px #3c4858;
+        box-shadow: 0px 0px 10px 5px #3c4858;
     }
-
     100% {
-        -ms-box-shadow: 0px 0px 0px 0px #3c4858;        
-        box-shadow: 0px 0px 0px 0px #3c4858;        
+        -ms-box-shadow: 0px 0px 0px 0px #3c4858;
+        box-shadow: 0px 0px 0px 0px #3c4858;
     }
 }
 
@@ -492,20 +519,17 @@ animation: testim-content-out .5s ease-in-out forwards;
         -o-box-shadow: 0px 0px 0px 0px #eee;
         box-shadow: 0px 0px 0px 0px #eee;
     }
-
     35% {
-        -o-box-shadow: 0px 0px 10px 5px #eee;        
-        box-shadow: 0px 0px 10px 5px #eee;        
+        -o-box-shadow: 0px 0px 10px 5px #eee;
+        box-shadow: 0px 0px 10px 5px #eee;
     }
-
     70% {
-        -o-box-shadow: 0px 0px 10px 5px #3c4858;        
-        box-shadow: 0px 0px 10px 5px #3c4858;        
+        -o-box-shadow: 0px 0px 10px 5px #3c4858;
+        box-shadow: 0px 0px 10px 5px #3c4858;
     }
-
     100% {
-        -o-box-shadow: 0px 0px 0px 0px #3c4858;        
-        box-shadow: 0px 0px 0px 0px #3c4858;        
+        -o-box-shadow: 0px 0px 0px 0px #3c4858;
+        box-shadow: 0px 0px 0px 0px #3c4858;
     }
 }
 
@@ -513,17 +537,14 @@ animation: testim-content-out .5s ease-in-out forwards;
     0% {
         box-shadow: 0px 0px 0px 0px #eee;
     }
-
     35% {
-        box-shadow: 0px 0px 10px 5px #eee;        
+        box-shadow: 0px 0px 10px 5px #eee;
     }
-
     70% {
-        box-shadow: 0px 0px 10px 5px #3c4858;        
+        box-shadow: 0px 0px 10px 5px #3c4858;
     }
-
     100% {
-        box-shadow: 0px 0px 0px 0px #3c4858;        
+        box-shadow: 0px 0px 0px 0px #3c4858;
     }
 }
 
@@ -533,11 +554,10 @@ animation: testim-content-out .5s ease-in-out forwards;
         -webkit-transform: translateY(100%);
         transform: translateY(100%);
     }
-
     to {
         opacity: 1;
-        -webkit-transform: translateY(0);        
-        transform: translateY(0);        
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
 }
 
@@ -547,11 +567,10 @@ animation: testim-content-out .5s ease-in-out forwards;
         -moz-transform: translateY(100%);
         transform: translateY(100%);
     }
-
     to {
         opacity: 1;
-        -moz-transform: translateY(0);        
-        transform: translateY(0);        
+        -moz-transform: translateY(0);
+        transform: translateY(0);
     }
 }
 
@@ -561,11 +580,10 @@ animation: testim-content-out .5s ease-in-out forwards;
         -ms-transform: translateY(100%);
         transform: translateY(100%);
     }
-
     to {
         opacity: 1;
-        -ms-transform: translateY(0);        
-        transform: translateY(0);        
+        -ms-transform: translateY(0);
+        transform: translateY(0);
     }
 }
 
@@ -575,11 +593,10 @@ animation: testim-content-out .5s ease-in-out forwards;
         -o-transform: translateY(100%);
         transform: translateY(100%);
     }
-
     to {
         opacity: 1;
-        -o-transform: translateY(0);        
-        transform: translateY(0);        
+        -o-transform: translateY(0);
+        transform: translateY(0);
     }
 }
 
@@ -588,10 +605,9 @@ animation: testim-content-out .5s ease-in-out forwards;
         opacity: 0;
         transform: translateY(100%);
     }
-
     to {
         opacity: 1;
-        transform: translateY(0);        
+        transform: translateY(0);
     }
 }
 
@@ -601,11 +617,10 @@ animation: testim-content-out .5s ease-in-out forwards;
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
-
     to {
         opacity: 0;
-        -webkit-transform: translateY(-100%);        
-        transform: translateY(-100%);        
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
     }
 }
 
@@ -615,11 +630,10 @@ animation: testim-content-out .5s ease-in-out forwards;
         -moz-transform: translateY(0);
         transform: translateY(0);
     }
-
     to {
         opacity: 0;
-        -moz-transform: translateY(-100%);        
-        transform: translateY(-100%);        
+        -moz-transform: translateY(-100%);
+        transform: translateY(-100%);
     }
 }
 
@@ -629,11 +643,10 @@ animation: testim-content-out .5s ease-in-out forwards;
         -ms-transform: translateY(0);
         transform: translateY(0);
     }
-
     to {
         opacity: 0;
-        -ms-transform: translateY(-100%);        
-        transform: translateY(-100%);        
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
     }
 }
 
@@ -643,11 +656,10 @@ animation: testim-content-out .5s ease-in-out forwards;
         -o-transform: translateY(0);
         transform: translateY(0);
     }
-
     to {
         opacity: 0;
-        transform: translateY(-100%);        
-        transform: translateY(-100%);        
+        transform: translateY(-100%);
+        transform: translateY(-100%);
     }
 }
 
@@ -656,10 +668,9 @@ animation: testim-content-out .5s ease-in-out forwards;
         opacity: 1;
         transform: translateY(0);
     }
-
     to {
         opacity: 0;
-        transform: translateY(-100%);        
+        transform: translateY(-100%);
     }
 }
 
@@ -669,11 +680,10 @@ animation: testim-content-out .5s ease-in-out forwards;
         -webkit-transform: scale(0);
         transform: scale(0);
     }
-
     to {
         opacity: 1;
-        -webkit-transform: scale(1);       
-        transform: scale(1);       
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
 }
 
@@ -683,11 +693,10 @@ animation: testim-content-out .5s ease-in-out forwards;
         -moz-transform: scale(0);
         transform: scale(0);
     }
-
     to {
         opacity: 1;
-        -moz-transform: scale(1);       
-        transform: scale(1);       
+        -moz-transform: scale(1);
+        transform: scale(1);
     }
 }
 
@@ -697,11 +706,10 @@ animation: testim-content-out .5s ease-in-out forwards;
         -ms-transform: scale(0);
         transform: scale(0);
     }
-
     to {
         opacity: 1;
-        -ms-transform: scale(1);       
-        transform: scale(1);       
+        -ms-transform: scale(1);
+        transform: scale(1);
     }
 }
 
@@ -711,11 +719,10 @@ animation: testim-content-out .5s ease-in-out forwards;
         -o-transform: scale(0);
         transform: scale(0);
     }
-
     to {
         opacity: 1;
-        -o-transform: scale(1);       
-        transform: scale(1);       
+        -o-transform: scale(1);
+        transform: scale(1);
     }
 }
 
@@ -724,20 +731,18 @@ animation: testim-content-out .5s ease-in-out forwards;
         opacity: 0;
         transform: scale(0);
     }
-
     to {
         opacity: 1;
-        transform: scale(1);       
+        transform: scale(1);
     }
 }
 
 @-webkit-keyframes testim-hide {
     from {
         opacity: 1;
-        -webkit-transform: scale(1);       
-        transform: scale(1);       
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
-
     to {
         opacity: 0;
         -webkit-transform: scale(0);
@@ -748,10 +753,9 @@ animation: testim-content-out .5s ease-in-out forwards;
 @-moz-keyframes testim-hide {
     from {
         opacity: 1;
-        -moz-transform: scale(1);       
-        transform: scale(1);       
+        -moz-transform: scale(1);
+        transform: scale(1);
     }
-
     to {
         opacity: 0;
         -moz-transform: scale(0);
@@ -762,10 +766,9 @@ animation: testim-content-out .5s ease-in-out forwards;
 @-ms-keyframes testim-hide {
     from {
         opacity: 1;
-        -ms-transform: scale(1);       
-        transform: scale(1);       
+        -ms-transform: scale(1);
+        transform: scale(1);
     }
-
     to {
         opacity: 0;
         -ms-transform: scale(0);
@@ -776,10 +779,9 @@ animation: testim-content-out .5s ease-in-out forwards;
 @-o-keyframes testim-hide {
     from {
         opacity: 1;
-        -o-transform: scale(1);       
-        transform: scale(1);       
+        -o-transform: scale(1);
+        transform: scale(1);
     }
-
     to {
         opacity: 0;
         -o-transform: scale(0);
@@ -790,9 +792,8 @@ animation: testim-content-out .5s ease-in-out forwards;
 @keyframes testim-hide {
     from {
         opacity: 1;
-        transform: scale(1);       
+        transform: scale(1);
     }
-
     to {
         opacity: 0;
         transform: scale(0);
@@ -817,7 +818,6 @@ animation: testim-content-out .5s ease-in-out forwards;
     .testim .arrow {
         font-size: 1.5em;
     }
-
     .testim .cont div p {
         line-height: 25px;
     }
@@ -844,7 +844,6 @@ animation: testim-content-out .5s ease-in-out forwards;
     .testim .cont div .role {
         font-size: 1.5rem;
     }
-
     .mem-card .m-card {
         width: 90%;
     }

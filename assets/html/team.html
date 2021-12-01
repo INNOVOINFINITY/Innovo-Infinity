@@ -2,19 +2,56 @@
 <html lang="en">
 
 <head>
+    <style>
+        .button {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            /* margin-left: 10vw; */
+            width: 50vw;
+        }
+        
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+        
+        .button1:hover {
+            background-color: black;
+            color: white;
+        }
+        
+        #myDIVEvent #myDIVCreative #myDIVIot #myDIVContent #myDIVCp #myDIVAi #myDIVWeb #myDIV {
+            width: 100%;
+            padding: 100px 0;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team | Innovo Infinity</title>
-    
+
     <!--For footer-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!--For Team -landing-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../fonts/all.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/team.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!--Family Font-->
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -26,8 +63,10 @@
         <!-- Desktop Navbar-->
         <div class="nav-container">
             <nav class="nav">
-                <div class="header-logo"><a href="../../index.html"><img src="../img/logo-pic.png" alt="logo"></a></div>
-                <a href="../../index.html" class="logo">INNOVO INFINITY</a>
+                <div class="header-logo">
+                    <a href="../../index.html"><img src="../img/logo-pic.png" alt="logo"></a>
+                </div>
+                <a href="../../index.html" style="color: white;" class="logo">INNOVO INFINITY</a>
                 <ul class="nav-list">
                     <li>
                         <a href="../../index.html" class="nav-link">Home</a>
@@ -42,7 +81,7 @@
                         <a href="team.html" class="nav-link">Our Team</a>
                     </li>
                 </ul>
-                <a href="https://bit.ly/3itTKO8" id="nav-join">Join Us</a>
+                <a id="nav-join">Join Us</a>
 
                 <!-- Responsive Navbar-->
                 <div class="burger">
@@ -50,7 +89,7 @@
                     <div class="burger-ele2"></div>
                     <div class="burger-ele3"></div>
                 </div>
-                
+
             </nav>
         </div>
     </header>
@@ -62,118 +101,541 @@
             <!--Testimonial Html-->
             <div class="about-team">
                 <div id="testim" class="testim">
-                                <div class="wrap">
-                    
-                                    <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
-                                    <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
-                                    <ul id="testim-dots" class="dots">
-                                        <li class="dot active"></li>
-                                        <li class="dot"></li>
-                                    </ul>
-                                    <div id="testim-content" class="cont">
-                                        
-                                        <div class="active">
-                                            <div class="img"><img src="../img/Team-Avatar/HOD-sir.jpg" alt=""></div>
-                                            <h2>Dr. P. C. Vashist
-                                                <div class="role">Head. Department of Information Technology</div>
-                                            </h2>                                            
-                                            <p>Firm belief in values is the main source of our abilities which gives us 
-                                                strength, courage, conviction, and commitment on a continuous basis.</p>                    
-                                        </div>
-                    
-                                        <div>
-                                            <div class="img"><img src="../img/Team-Avatar/Ashish-sir.jpeg" alt=""></div>
-                                            <h2>Dr. Ashish Tripathi
-                                                <div class="role">Faculity Co-ordinator</div>
-                                            </h2>              
-                                            <p> We firmly believe that support, guidance and assistance play a phenomenal 
-                                                role in transforming students into professionals with sheer excellence and sharp focus.</p>                    
-                                        </div>
-                    
-                                    </div>
-                    
-                                </div>
+                    <div class="wrap">
+
+                        <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                        <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+                        <ul id="testim-dots" class="dots">
+                            <li class="dot active"></li>
+                            <li class="dot"></li>
+                            <li class="dot"></li>
+                        </ul>
+                        <div id="testim-content" class="cont">
+
+                            <div class="active">
+                                <div class="img"><img src="../img/Team-Avatar/HOD-sir.jpg" alt=""></div>
+                                <h2>Dr. P. C. Vashist
+                                    <div class="role">Head. Department of Information Technology</div>
+                                </h2>
+                                <p>Firm belief in values is the main source of our abilities which gives us strength, courage, conviction, and commitment on a continuous basis.</p>
                             </div>
+
+                            <div>
+                                <div class="img"><img src="../img/Team-Avatar/Ashish-sir.jpeg" alt=""></div>
+                                <h2>Dr. Ashish Tripathi
+                                    <div class="role">Faculity Co-ordinator</div>
+                                </h2>
+                                <p> We firmly believe that support, guidance and assistance play a phenomenal role in transforming students into professionals with sheer excellence and sharp focus.</p>
+                            </div>
+
+                            <div>
+                                <div class="img"><img src="../img/Team-Avatar/Arun Kumar Sir.jpeg" alt=""></div>
+                                <h2>Prof. Arun Kr. Singh
+                                    <div class="role">Faculity Co-ordinator</div>
+                                </h2>
+                                <p> We proudly bring forth you new brand opportunities and have opportunity to be a part of our community and carry the legacy forward. </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
     <section class="core-section">
-        <div class="title">Core Team!</div>
 
-        <!--App Developement-->
-        <div class="lead-card">
-            <div class="card ">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Vaibhav tyagi.jpg" alt=""></div>
-                <h4 class="name">Vaibhav Tyagi</h4>
-                <p class="role" style="color: red;">Club Head & App Development Head</p>
-                <p class="info">
-                    A coding enthusiast loves to create project's in Web, App and ML domain.
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.linkedin.com/in/vaibhav-tyagi-4060781a0"><i class="fab fa-linkedin-in"></i></a></li> 
-                    <li><a href="https://github.com/aptvaibhav"><i class="fab fa-github"></i></a></li> 
-                    <li><a href="https://www.instagram.com/vaibhav_apt/"><i class="fab fa-instagram"></i></a></li> 
-                    <li><a href="https://m.facebook.com/vaibhav.tyagi.121?ref=bookmarks"><i class="fab fa-facebook-square"></i></a></li> 
-                </ul>
+        <div class="title">Core Team 2021</div>
+
+
+        <div>
+            <div style="justify-content: space-around;" class="lead-card">
+                <div class="card ">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Arpita Bhatt.jpeg" alt=""></div>
+                    <h4 class="name">Arpita Bhatt</h4>
+                    <p class="role">President</p>
+
+                    <ul class="social">
+                        <li><a href="https://github.com/arpita938"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/arpita-bhatt-801981158/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:arpitabhd@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="card ">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Chetna Singhal.jpg" alt=""></div>
+                    <h4 class="name">Chetna Singhal</h4>
+                    <p class="role">President</p>
+
+                    <ul class="social">
+                        <li><a href="https://github.com/chetna5404"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/chetna-s-5a0bab1b1"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:chetanagg2001@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mem-card">
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Md Saquib Khan.jpg" alt=""></div>
+                    <h4 class="name">Md Saquib Khan</h4>
+                    <p class="role">Vice President</p>
+                    <!-- <p class="info">
+                        Tech enthusiast | badminton addict | passionate about doing innovative stuff | exploring Nature
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/notsotypicalkhan"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/mohd-saquib-khan-a28030223/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:it19167@glbitm.ac.in"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Hariom Doorwar.jpeg" alt=""></div>
+                    <h4 class="name">Hariom Doorwar</h4>
+                    <p class="role">Vice President</p>
+                    <!-- <p class="info">
+                        Tech Enthusiast | Badminton addict | Loves to read Novel
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/hariomdoorwar"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/hariom-doorwar-249a5b217/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:hariomdoorwar@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="mem-card">
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Shaurya Chhonker.jpg" alt=""></div>
-                <h4 class="name">Shaurya Chhonker</h4>
-                <p class="role">App Developer</p>
-                <p class="info">
-                    Football | Weight Training | Running
-                </p>
-                <ul class="social">
-                    <li><a href="https://github.com/shaurya0o7"><i class="fab fa-github"></i></a></li> 
-                    <li><a href="https://www.instagram.com/shaurya0o7/"><i class="fab fa-instagram"></i></a></li> 
-                </ul>
+
+
+
+
+
+
+        <button class="button1 button" onclick="myFunction('myDIVWeb')" type="button">WEB DEVELOPMENT</button>
+
+        <!---------------------------------WEB DEVELOPMENT--------------------------->
+
+        <div id="myDIVWeb" style="display: none;">
+            <div class="lead-card">
+                <div class="card ">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Vishal Pratap Singh.jpg" alt=""></div>
+                    <h4 class="name">Vishal Pratap Singh</h4>
+                    <p class="role">Web Development Head</p>
+
+                    <ul class="social">
+                        <li><a href="https://github.com/vishaldude9415"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/vishal-gl/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:it19112@glbitm.ac.in"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Chitvan Singhal.jpg" alt=""></div>
-                <h4 class="name">Chitvan Singhal</h4>
-                <p class="role">App development Manager</p>
-                <p class="info">
-                    Tech Enthusiast
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.linkedin.com/in/chitvan-singhal-26550b198"><i class="fab fa-linkedin-in"></i></a></li> 
-                    <li><a href="https://www.instagram.com/chitvan_singhal/"><i class="fab fa-instagram"></i></a></li> 
-                </ul>
+            <div class="mem-card">
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Aditya Verma.jpeg" alt=""></div>
+                    <h4 class="name">Aditya Verma</h4>
+                    <p class="role">Web Developer</p>
+                    <!-- <p class="info">
+                        Tech enthusiast | badminton addict | passionate about doing innovative stuff | exploring Nature
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/iamadityav"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/aditya-verma-b05604195/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:iamadityav@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Harshita Agarwal.jpeg" alt=""></div>
+                    <h4 class="name">Harshita Agarwal</h4>
+                    <p class="role">Web Designer</p>
+                    <!-- <p class="info">
+                        Tech Enthusiast | Badminton addict | Loves to read Novel
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/harshita484"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/harshita-agarwal-1b69191b6"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:harshitaagarwal484@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Vanshika Gupta.jpeg" alt=""></div>
+                    <h4 class="name">Vanshika Gupta</h4>
+                    <p class="role">Web Designer</p>
+                    <!-- <p class="info">
+                        Photography addict | Cooking Fanatic | Adventure Lover | Tech Enthusiast
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/vg1009"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://github.com/vg1009"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:vanshikasept10@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/ankan.jpeg" alt=""></div>
-                <h4 class="name">Ankan Chanda</h4>
-                <p class="role">App Development Manager</p>
-                <p class="info">
-                    Tech Enthusiast | Public Speaking <br>
-                    In sports, I love football and I really enjoy watching it and like to communicate over social evils in our society.
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.linkedin.com/in/ankan-chanda741/"><i class="fab fa-linkedin-in"></i></a></li> 
-                    <li><a href="https://github.com/ankan10"><i class="fab fa-github"></i></a></li> 
-                    <li><a href="https://www.instagram.com/justaninhuman/"><i class=" fab fa-instagram"></i></a></li>
-                </ul>
+        </div>
+        <div class="team-border" style="margin-bottom: 20px;margin-top: 20px;"></div>
+        <button class="button1 button" onclick="myFunction('myDIVAi')" type="button">ARTIFICIAL INTELLIGENCE</button>
+        <!--------------------------------------AI Team------------------------------->
+        <div id="myDIVAi" style="display: none;">
+            <div class="lead-card">
+                <div class="card ">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Prince Kumar.jpg" alt=""></div>
+                    <h4 class="name">Prince Kumar</h4>
+                    <p class="role">AI HEAD</p>
+                    <!-- <p class="info">
+                        Data Science | Machine Learning | Natural Language Processing <br> Computer Vision | Deep learning | Python
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/skillstarprince"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/skillstarprince"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:it19810@glbitm.ac.in"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mem-card">
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Akshat Jain.jpg" alt=""></div>
+                    <h4 class="name">Akshat Jain</h4>
+                    <p class="role">Machine Learning Member</p>
+                    <!-- <p class="info">
+                        I'm an Independent and active Individual who loves to face challenges...I'm a Cricket addict and a gamer.
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/HorizonAks/"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/hzakshat"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:it19045@glbitm.ac.in"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Hariom Doorwar.jpeg" alt=""></div>
+                    <h4 class="name">Hariom Doorwar</h4>
+                    <p class="role">Machine Learning Member</p>
+                    <!-- <p class="info">
+                        Listening song | Basketball | Indoor: Chess . ludo
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/hariomdoorwar"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/hariom-doorwar-249a5b217/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:hariomdoorwar@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="team-border" style="margin-bottom: 20px;margin-top: 20px;"></div>
+
+        <button class="button1 button" onclick="myFunction('myDIVCp')" type="button">COMPETITIVE PROGRAMMING</button>
+        <!----------------------------Competitive Programming------------------------------->
+
+        <div id="myDIVCp" style="display: none;">
+            <div class="lead-card">
+                <div class="card ">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Chetna Singhal.jpg" alt=""></div>
+                    <h4 class="name">Chetna Singhal</h4>
+                    <p class="role">Competitive Programming Head</p>
+                    <!-- <p class="info">
+                        To become a successful expert in the field of Information Technology<br> by channelizing my technical knowledge and skills<br> Chess | Competitive Programmer | Traveller
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/chetna5404"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/chetna-s-5a0bab1b1"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:chetanagg2001@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mem-card">
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Aditya Verma.jpeg" alt=""></div>
+                    <h4 class="name">Aditya Verma</h4>
+                    <p class="role">Competitive Programming Member</p>
+                    <!-- <p class="info">
+                        Tech Enthusiast | Competitive Programmer
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/iamadityav"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/aditya-verma-b05604195/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:iamadityav@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Md Saquib Khan.jpg" alt=""></div>
+                    <h4 class="name">Md Saquib Khan</h4>
+                    <p class="role">Competitive Programming Member</p>
+                    <!-- <p class="info">
+                        Tech Enthusiast | Badminton addict
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/notsotypicalkhan"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/mohd-saquib-khan-a28030223/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:it19167@glbitm.ac.in"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Harshita Agarwal.jpeg" alt=""></div>
+                    <h4 class="name">Harshita Agarwal</h4>
+                    <p class="role">Competitive Programming Member</p>
+                    <!-- <p class="info">
+                        Technology Enthusiast and Learning skills daily to level myself up
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/harshita484"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/harshita-agarwal-1b69191b6"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:harshitaagarwal484@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Chitra Sharma.jpg" alt=""></div>
+                    <h4 class="name">Chitra Sharma</h4>
+                    <p class="role">Competitive Programming Member</p>
+                    <!-- <p class="info">
+                        Tech Enthusiast | Competitive Programmer
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/Chitrasharma209"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/chitra-sharma-644a021b1"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:sharmachitra1947@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Rohan Yadav.jpeg" alt=""></div>
+                    <h4 class="name">Rohan Yadav</h4>
+                    <p class="role">Competitive Programming Member</p>
+                    <!-- <p class="info">
+                        Tech Enthusiast | Loves to do Calligraphy
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/rohanyadav1613"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/rohan-yadav-1520031b2"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:yrkrohii131601@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-            <div class="team-border"></div>
 
-            <!--Web Development-->
+        <div class="team-border" style="margin-bottom: 20px;margin-top: 20px;"></div>
+        <button class="button1 button" onclick="myFunction('myDIVContent')" type="button">EVENT MANAGEMENT</button>
+        <!--Event-->
+        <div id="myDIVContent" style="display: none;">
+            <div class="lead-card">
+                <div class="card ">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Abhishek Kumar Rai.jpg" alt=""></div>
+                    <h4 class="name">Abhishek Kumar Rai</h4>
+                    <p class="role">Event Management Team Head</p>
+                    <!-- <p class="info">
+                        Basketball Player | Tech lover | Public Speaker
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:abhirai8986@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="card ">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Gargi Shakya.jpg" alt=""></div>
+                    <h4 class="name">Gargi Shakya</h4>
+                    <p class="role">Event Management Team Head</p>
+                    <!-- <p class="info">
+                        Basketball Player | Tech lover | Public Speaker
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/GargiShakya"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/gargi-shakya-580674213"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:gargishakya10@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mem-card">
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Aditya Verma.jpeg" alt=""></div>
+                    <h4 class="name">Aditya Verma</h4>
+                    <p class="role">Event Team Member</p>
+                    <!-- <p class="info">
+                        Tech Explorer | Singer
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/iamadityav"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/aditya-verma-b05604195/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:iamadityav@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Ishu Rajan.jpg" alt=""></div>
+                    <h4 class="name">Ishu Rajan</h4>
+                    <p class="role">Event Team Member</p>
+                    <!-- <p class="info">
+                        Traveller | Football addict | Swimmer
+                        <br>Intrested in robotics | IOT| Photography
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/I-Infinatoo"><i class="fab fa-github"></i></a></li>
+                        <li><a href="http://www.linkedin.com/in/ishurajan"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:ishurajan234@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="team-border" style="margin-bottom: 20px;margin-top: 20px;"></div>
+        <button class="button1 button" onclick="myFunction('myDIVEvent')" type="button">CONTENT TEAM</button>
+        <!--Content Manager-->
+        <div id="myDIVEvent" style="display: none;">
+            <div class="lead-card">
+                <div class="card ">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Arpita Bhatt.jpeg" alt=""></div>
+                    <h4 class="name">Arpita Bhatt</h4>
+                    <p class="role">Content Head</p>
+                    <!-- <p class="info">
+                        I like gaining knowledge about new technologies. <br>I like interacting with people as well as listening music <br>and gaining some other knowledge.
+
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/arpita938"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/arpita-bhatt-801981158/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:arpitabhd@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mem-card">
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Rohan Yadav.jpeg" alt=""></div>
+                    <h4 class="name">Rohan Yadav</h4>
+                    <p class="role">Content Team Member</p>
+                    <!-- <p class="info">
+                        I like to learn foreign languages, love to travel and explore new things.
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/rohanyadav1613"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/rohan-yadav-1520031b2"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:yrkrohii131601@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Deepali Mathur.jpg" alt=""></div>
+                    <h4 class="name">Deepali Mathur</h4>
+                    <p class="role">Content Team Member</p>
+                    <!-- <p class="info">
+                        Adventure lover, like to explore new things, have fun with friends.
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/deepali46"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/deepali-mathur-23193218b"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:it19065@glbitm.ac.in"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Team-Avatar-Current/Hariom Doorwar.jpeg" alt=""></div>
+                    <h4 class="name">Hariom Doorwar</h4>
+                    <p class="role">Content Team Member</p>
+                    <!-- <p class="info">
+                        Adventure lover, like to explore new things, have fun with friends.
+                    </p> -->
+                    <ul class="social">
+                        <li><a href="https://github.com/hariomdoorwar"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/hariom-doorwar-249a5b217/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:hariomdoorwar@gmail.com"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+
+
+
+
+
+
+    <!-------------------------------- PAST TEAMS SECTION -------------------------------->
+
+    <section style="margin-bottom: 50px;" class="core-section">
+        <div class="title">PAST TEAM</div>
+
+
+        <div class="big_button">
+            <button class=" button1 button" onclick="myFunction('past_myDIV')" type="button">APP DEVELOPMENT</button>
+        </div>
+
+        <div id="past_myDIV" style="display: none;">
+            <div class="lead-card">
+                <div class="card ">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Vaibhav tyagi.jpg" alt=""></div>
+                    <h4 class="name">Vaibhav Tyagi</h4>
+                    <p class="role" style="color: red;">Club Head & App Development Head</p>
+                    <p class="info">
+                        A coding enthusiast loves to create project's in Web, App and ML domain.
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/vaibhav-tyagi-4060781a0"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/aptvaibhav"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/vaibhav_apt/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://m.facebook.com/vaibhav.tyagi.121?ref=bookmarks"><i class="fab fa-facebook-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mem-card">
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Shaurya Chhonker.jpg" alt=""></div>
+                    <h4 class="name">Shaurya Chhonker</h4>
+                    <p class="role">App Developer</p>
+                    <p class="info">
+                        Football | Weight Training | Running
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://github.com/shaurya0o7"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/shaurya0o7/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Chitvan Singhal.jpg" alt=""></div>
+                    <h4 class="name">Chitvan Singhal</h4>
+                    <p class="role">App development Manager</p>
+                    <p class="info">
+                        Tech Enthusiast
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/chitvan-singhal-26550b198"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.instagram.com/chitvan_singhal/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/ankan.jpeg" alt=""></div>
+                    <h4 class="name">Ankan Chanda</h4>
+                    <p class="role">App Development Manager</p>
+                    <p class="info">
+                        Tech Enthusiast | Public Speaking <br> In sports, I love football and I really enjoy watching it and like to communicate over social evils in our society.
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/ankan-chanda741/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/ankan10"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/justaninhuman/"><i class=" fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="team-border" style="margin-bottom: 20px;margin-top: 20px;"></div>
+
+
+        <div class="big_button">
+            <button class="button1 button" onclick="myFunction('past_myDIVWeb')" type="button">WEB DEVELOPMENT</button>
+        </div>
+        <!--Web Development-->
+        <div id="past_myDIVWeb" style="display: none;">
             <div class="lead-card">
                 <div class="card ">
                     <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Sumit.jpg" alt=""></div>
                     <h4 class="name">Sumit Rohilla</h4>
                     <p class="role">Web Development Head</p>
                     <p class="info">
-                        Front-End Developer | UI & UX Designer | FootBall addict <br>
-                        Thinker | Competitive Programmer
+                        Front-End Developer | UI & UX Designer | FootBall addict <br> Thinker | Competitive Programmer
                     </p>
                     <ul class="social">
-                        <li><a href="https://github.com/sumitRohilla"><i class="fab fa-github"></i></a></li> 
+                        <li><a href="https://github.com/sumitRohilla"><i class="fab fa-github"></i></a></li>
                         <li><a href="https://www.instagram.com/sumit.__.rajput/"><i class=" fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
@@ -184,12 +646,11 @@
                     <h4 class="name">Poojita Gupta</h4>
                     <p class="role">Web Development Manager</p>
                     <p class="info">
-                        Tech enthusiast | badminton addict | passionate about doing innovative stuff | exploring
-                        Nature
+                        Tech enthusiast | badminton addict | passionate about doing innovative stuff | exploring Nature
                     </p>
                     <ul class="social">
-                        <li><a href="https://www.linkedin.com/in/poojita-gupta-5820a7192"><i class="fab fa-linkedin-in"></i></a></li> 
-                        <li><a href="https://github.com/POOJITA09"><i class="fab fa-github"></i></a></li> 
+                        <li><a href="https://www.linkedin.com/in/poojita-gupta-5820a7192"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/POOJITA09"><i class="fab fa-github"></i></a></li>
                         <li><a href="https://www.instagram.com/salonigupta09/"><i class=" fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
@@ -202,7 +663,7 @@
                     </p>
                     <ul class="social">
                         <li><a href="https://www.linkedin.com/in/vidhi-dhariwal-1b1b6a1a3"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="https://github.com/Vidhi-Singh"><i class="fab fa-github"></i></a></li> 
+                        <li><a href="https://github.com/Vidhi-Singh"><i class="fab fa-github"></i></a></li>
                         <li><a href="https://instagram.com/vidhi.dhariwal?igshid=wzkxvqduwx8t"><i class=" fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
@@ -214,10 +675,10 @@
                         Photography addict | Cooking Fanatic | Adventure Lover | Tech Enthusiast
                     </p>
                     <ul class="social">
-                        <li><a href="https://www.linkedin.com/in/ridhim-garg-7b5740175"><i class="fab fa-linkedin-in"></i></a></li> 
-                        <li><a href="https://github.com/Ridhim06"><i class="fab fa-github"></i></a></li> 
+                        <li><a href="https://www.linkedin.com/in/ridhim-garg-7b5740175"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/Ridhim06"><i class="fab fa-github"></i></a></li>
                         <li><a href="https://www.instagram.com/its_me_ridhim/"><i class=" fab fa-instagram"></i></a></li>
-                        <li><a href="http://facebook.com/ridhim.garg.5"><i class=" fab fa-facebook-square"></i></a></li>                                
+                        <li><a href="http://facebook.com/ridhim.garg.5"><i class=" fab fa-facebook-square"></i></a></li>
                     </ul>
                 </div>
                 <div class="m-card">
@@ -228,8 +689,8 @@
                         Tech Enthusiast | Competitive programmer | Data structure and algorithms student | Badminton addict.
                     </p>
                     <ul class="social">
-                        <li><a href="www.linkedin.com/in/akshay-jain-7a48531a0"><i class="fab fa-linkedin-in"></i></a></li> 
-                        <li><a href="https://github.com/akshayy23"><i class="fab fa-github"></i></a></li> 
+                        <li><a href="www.linkedin.com/in/akshay-jain-7a48531a0"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/akshayy23"><i class="fab fa-github"></i></a></li>
                         <li><a href="https://www.instagram.com/_akshay_23/"><i class=" fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
@@ -241,8 +702,8 @@
                         Front-End Development | Public Speaking.
                     </p>
                     <ul class="social">
-                        <li><a href="https://www.linkedin.com/in/ayush-mishra-68a049199"><i class="fab fa-linkedin-in"></i></a></li> 
-                        <li><a href="https://github.com/ayush-mishraa"><i class="fab fa-github"></i></a></li> 
+                        <li><a href="https://www.linkedin.com/in/ayush-mishra-68a049199"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/ayush-mishraa"><i class="fab fa-github"></i></a></li>
                         <li><a href="https://www.instagram.com/__ayush_mishra/"><i class=" fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
@@ -254,338 +715,367 @@
                         Tech Enthusiast | Gaming | Volleyball | Novels Reading
                     </p>
                     <ul class="social">
-                        <li><a href="https://github.com/harshits19"><i class="fab fa-github"></i></a></li> 
+                        <li><a href="https://github.com/harshits19"><i class="fab fa-github"></i></a></li>
                         <li><a href="https://www.instagram.com/_harshitz/"><i class=" fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
-                <div class="team-border"></div>
+        </div>
+        <div class="team-border" style="margin-bottom: 20px;margin-top: 20px;"></div>
 
-                <!--Machine Learning-->
-        <div class="lead-card">
-            <div class="card ">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Gaurav Singh.jpg" alt=""></div>
-                <h4 class="name">Gaurav Singh</h4>
-                <p class="role">Community Development head & ML HEAD</p>
-                <p class="info">
-                    Data Science | Machine Learning | Natural Language Processing <br> Computer Vision | Deep
-                    learning | Python
-                </p>
-                <ul class="social">                    
-                    <li><a href="https://www.linkedin.com/in/gaurav-singh-b90369191/"><i class="fab fa-linkedin-in"></i></a></li> 
-                    <li><a href="https://github.com/gauravrajwada"><i class="fab fa-github"></i></a></li> 
-                    <li><a href="https://twitter.com/GauravRajwada"><i class=" fab fa-twitter-square"></i></a></li>
-                    <li><a href="https://www.instagram.com/gauravrajwada/"><i class="fab fa-instagram"></i></a></li> 
-                    
-                </ul>
-            </div>
+        <div class="big_button">
+            <button class="button1 button" onclick="myFunction('past_myDIVAi')" type="button">MACHINE LEARNING</button>
         </div>
-        <div class="mem-card">
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Piyush Prashar.jpeg" alt=""></div>
-                <h4 class="name">Piyush Prashar</h4>
-                <p class="role">Machine Learning Manager</p>
-                <p class="info">
-                    I'm an Independent and active Individual who loves to face challenges...I'm a Cricket addict
-                    and a gamer.
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.linkedin.com/in/piyush-prashar-62890016b/"><i class="fab fa-linkedin-in"></i></a></li> 
-                    <li><a href="https://github.com/piyush-0411"><i class="fab fa-github"></i></a></li> 
-                    <li><a href="https://www.instagram.com/piyush_mahi/"><i class="fab fa-instagram"></i></a></li> 
-                </ul>
-            </div>
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Divya.jpeg" alt=""></div>
-                <h4 class="name">Divya Singh</h4>
-                <p class="role">Machine Learning Manager</p>
-                <p class="info">
-                    Listening song | Basketball | 
-                    Indoor: Chess . ludo
-                </p>
-                <ul class="social">
-                    <li><a href="https://github.com/Divyaangel"><i class="fab fa-github"></i></a></li> 
-                </ul>
-            </div>
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Sachin Saroj.jpeg" alt=""></div>
-                <h4 class="name">Sachin Saroj Sinha</h4>
-                <p class="role">Machine Learning Manager</p>
-                <p class="info">
-                    Observing peoples | Love badminton | 
-                    Computer programmer | love to talk to new peoples
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.linkedin.com/in/sachin-saroj-sinha-80140a1b8/"><i class="fab fa-linkedin-in"></i></a></li> 
-                    <li><a href="https://github.com/sachin0510"><i class="fab fa-github"></i></a></li> 
-                    <li><a href="https://www.instagram.com/sachin.saroj5/"><i class="fab fa-instagram"></i></a></li> 
-                </ul>
-            </div>
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Shivam Patel.jpg" alt=""></div>
-                <h4 class="name">Shivam Patel</h4>
-                <p class="role">Machine Learning Manager</p>
-                <p class="info">
-                    love to play vollyball patitcipate extra curriculum activities
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.linkedin.com/in/shivam-patel-bbb7691a5"><i class="fab fa-linkedin-in"></i></a></li> 
-                    <li><a href="https://github.com/patelshivam3000"><i class="fab fa-github"></i></a></li> 
-                    <li><a href="https://www.instagram.com/two_word_/"><i class="fab fa-instagram"></i></a></li> 
-                </ul>
-            </div>
-        </div>
-            <div class="team-border"></div>
-            
-            <!--Competitive Programming -->
-        <div class="lead-card">
-            <div class="card ">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Ritik Agarval.jpg" alt=""></div>
-                <h4 class="name">Ritik Agarwal</h4>
-                <p class="role">Competitive Programming Head</p>
-                <p class="info">
-                    To become a successful expert in the field of Information Technology<br> by channelizing my technical
-                    knowledge and skills<br>
-                    Chess | Competitive Programmer | Traveller
-                </p>
-                <ul class="social">
-                    <!--  -->
-                </ul>
-            </div>
-        </div>
-        <div class="mem-card">
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Himanshu saini.jpg" alt=""></div>
-                <h4 class="name">Himanshu Sani</h4>
-                <p class="role">Competitive Programming Manager</p>
-                <p class="info">
-                    Tech Enthusiast | Competitive Programmer
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.instagram.com/himmmanshuuu"><i class="fab fa-instagram"></i></a></li> 
-                </ul>
-            </div>
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Saumya Triphati.png" alt=""></div>
-                <h4 class="name">Saumya Tripathi</h4>
-                <p class="role">Competitive Programming Manager</p>
-                <p class="info">
-                    Tech Enthusiast | Badminton addict
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.linkedin.com/in/saumya-tripathi-605448193"><i class="fab fa-linkedin-in"></i></a></li> 
-                    <li><a href="https://github.com/s5620"><i class="fab fa-github"></i></a></li> 
-                </ul>
-            </div>
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Sushmita.jpeg" alt=""></div>
-                <h4 class="name">Sushmita Kaushal</h4>
-                <p class="role">Competitive Programming Manager</p>
-                <p class="info">
-                    Technology Enthusiast and Learning skills daily to level myself up
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.instagram.com/sushmitakaushal98/"><i class=" fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Nikhil siwach.jpg" alt=""></div>
-                <h4 class="name">Nikhil Siwach</h4>
-                <p class="role">Competitive Programming Member</p>
-                <p class="info">
-                    Tech Enthusiast | Competitive Programmer
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.instagram.com/lllihkin/"><i class="fab fa-instagram"></i></a></li> 
-                </ul>
-            </div>
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Krishna Sajeev.jpg" alt=""></div>
-                <h4 class="name">Krishna Sajeev</h4>
-                <p class="role">Competitive Programming Manager</p>
-                <p class="info">
-                    Tech Enthusiast | Loves to do Calligraphy
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.linkedin.com/in/krishna-sajeev-b36480194/"><i class="fab fa-linkedin-in"></i></a></li> 
-                    <li><a href="https://github.com/krishnasajeeva"><i class="fab fa-github"></i></a></li> 
-                    <li><a href="https://www.instagram.com/krishnasajeeva/"><i class="fab fa-instagram"></i></a></li> 
-                </ul>
-            </div>
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Anmol Arora.jpg" alt=""></div>
-                <h4 class="name">Anmol Arora</h4>
-                <p class="role">Competitive Programming Manager</p>
-                <p class="info">
-                    Football addict | Loves competitive coding | Watching movies especially romcom😂
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.linkedin.com/in/anmol-arora-bb3a481b0/"><i class="fab fa-linkedin-in"></i></a></li> 
-                    <li><a href="https://www.instagram.com/a.n.m.o.l.__/"><i class="fab fa-instagram"></i></a></li> 
-                </ul>
-            </div>
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Chhavi Mainwall.jpg" alt=""></div>
-                <h4 class="name">Chhavi Mainwall</h4>
-                <p class="role">Competitive Programming Manager</p>
-                <p class="info">
-                    Like Socializing | Good at painting
-                </p>
-                <ul class="social">
-                    <li><a href="https://github.com/Chhavimainwall10"><i class="fab fa-github"></i></a></li> 
-                    <li><a href="https://www.instagram.com/__chhavi_mainwall__/"><i class=" fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100004848919010"><i class=" fab fa-facebook-square"></i></a></li>
-                </ul>
-            </div>
-        </div>
-            <div class="team-border"></div>
+        <!--Machine Learning-->
+        <div id="past_myDIVAi" style="display: none;">
+            <div class="lead-card">
+                <div class="card ">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Gaurav Singh.jpg" alt=""></div>
+                    <h4 class="name">Gaurav Singh</h4>
+                    <p class="role">Community Development head & ML HEAD</p>
+                    <p class="info">
+                        Data Science | Machine Learning | Natural Language Processing <br> Computer Vision | Deep learning | Python
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/gaurav-singh-b90369191/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/gauravrajwada"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://twitter.com/GauravRajwada"><i class=" fab fa-twitter-square"></i></a></li>
+                        <li><a href="https://www.instagram.com/gauravrajwada/"><i class="fab fa-instagram"></i></a></li>
 
-            <!--Event-->
-        <div class="lead-card">
-            <div class="card ">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Satyam Bhardwaj.jpg" alt=""></div>
-                <h4 class="name">Satyam Bhardwaj</h4>
-                <p class="role">Event Management Team Head</p>
-                <p class="info">
-                    Basketball Player | Tech lover | Public Speaker
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.linkedin.com/in/satyam-bhardwaj-6158141b6"><i class="fab fa-linkedin-in"></i></a></li> 
-                    <li><a href="https://github.com/Satyam124421"><i class="fab fa-github"></i></a></li> 
-                </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="mem-card">
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Piyush Prashar.jpeg" alt=""></div>
+                    <h4 class="name">Piyush Prashar</h4>
+                    <p class="role">Machine Learning Manager</p>
+                    <p class="info">
+                        I'm an Independent and active Individual who loves to face challenges...I'm a Cricket addict and a gamer.
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/piyush-prashar-62890016b/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/piyush-0411"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/piyush_mahi/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Divya.jpeg" alt=""></div>
+                    <h4 class="name">Divya Singh</h4>
+                    <p class="role">Machine Learning Manager</p>
+                    <p class="info">
+                        Listening song | Basketball | Indoor: Chess . ludo
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://github.com/Divyaangel"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Sachin Saroj.jpeg" alt=""></div>
+                    <h4 class="name">Sachin Saroj Sinha</h4>
+                    <p class="role">Machine Learning Manager</p>
+                    <p class="info">
+                        Observing peoples | Love badminton | Computer programmer | love to talk to new peoples
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/sachin-saroj-sinha-80140a1b8/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/sachin0510"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/sachin.saroj5/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Shivam Patel.jpg" alt=""></div>
+                    <h4 class="name">Shivam Patel</h4>
+                    <p class="role">Machine Learning Manager</p>
+                    <p class="info">
+                        love to play vollyball patitcipate extra curriculum activities
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/shivam-patel-bbb7691a5"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/patelshivam3000"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/two_word_/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="mem-card">
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Aditya.jpg" alt=""></div>
-                <h4 class="name">Aditya Gupta</h4>
-                <p class="role">Event Manager</p>
-                <p class="info">
-                    Tech Explorer | Singer
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.linkedin.com/in/aditya-gupta-638bb7147"><i class="fab fa-linkedin-in"></i></a></li> 
-                    <li><a href="https://github.com/whyadiwhy"><i class="fab fa-github"></i></a></li> 
-                    <li><a href="https://www.instagram.com/_whyadiwhy/"><i class=" fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Vasu.jpg" alt=""></div>
-                <h4 class="name">Vasu Agarwal</h4>
-                <p class="role">Event manager</p>
-                <p class="info">
-                    Traveller | Football addict | Swimmer
-                    <br>Intrested in robotics | IOT| Photography
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.instagram.com/coderflare11/"><i class=" fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com/vasu.agarwal.9212"><i class=" fab fa-facebook-square"></i></a></li>
-                </ul>
-            </div>
-        </div>
-            <div class="team-border"></div>
+        <div class="team-border" style="margin-bottom: 20px;margin-top: 20px;"></div>
 
-            <!--IoT-->
-        <div class="lead-card">
-            <div class="card ">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Fahad khan.jpg" alt=""></div>
-                <h4 class="name">Fahad Ali Khan</h4>
-                <p class="role">IoT Team Head</p>
-                <p class="info">
-                    I like to code and i give competitive programming contest regularly <br>and i have great interest in cricket.
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.linkedin.com/in/fahad-ali-khan-86976814b"><i class="fab fa-linkedin-in"></i></a></li> 
-                    <li><a href="https://github.com/fahadkhaanz"><i class="fab fa-github"></i></a></li> 
-                    <li><a href="https://www.instagram.com/fahadkhannz/"><i class=" fab fa-instagram"></i></a></li>
-                </ul>
+        <div class="big_button">
+
+            <button class="button1 button" onclick="myFunction('past_myDIVCp')" type="button">COMPETITIVE PROGRAMMING</button>
+        </div>
+        <!--Competitive Programming -->
+        <div id="past_myDIVCp" style="display: none;">
+            <div class="lead-card">
+                <div class="card ">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Ritik Agarval.jpg" alt=""></div>
+                    <h4 class="name">Ritik Agarwal</h4>
+                    <p class="role">Competitive Programming Head</p>
+                    <p class="info">
+                        To become a successful expert in the field of Information Technology<br> by channelizing my technical knowledge and skills<br> Chess | Competitive Programmer | Traveller
+                    </p>
+                    <ul class="social">
+                        <!--  -->
+                    </ul>
+                </div>
+            </div>
+            <div class="mem-card">
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Himanshu saini.jpg" alt=""></div>
+                    <h4 class="name">Himanshu Sani</h4>
+                    <p class="role">Competitive Programming Manager</p>
+                    <p class="info">
+                        Tech Enthusiast | Competitive Programmer
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.instagram.com/himmmanshuuu"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Saumya Triphati.png" alt=""></div>
+                    <h4 class="name">Saumya Tripathi</h4>
+                    <p class="role">Competitive Programming Manager</p>
+                    <p class="info">
+                        Tech Enthusiast | Badminton addict
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/saumya-tripathi-605448193"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/s5620"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Sushmita.jpeg" alt=""></div>
+                    <h4 class="name">Sushmita Kaushal</h4>
+                    <p class="role">Competitive Programming Manager</p>
+                    <p class="info">
+                        Technology Enthusiast and Learning skills daily to level myself up
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.instagram.com/sushmitakaushal98/"><i class=" fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Nikhil siwach.jpg" alt=""></div>
+                    <h4 class="name">Nikhil Siwach</h4>
+                    <p class="role">Competitive Programming Member</p>
+                    <p class="info">
+                        Tech Enthusiast | Competitive Programmer
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.instagram.com/lllihkin/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Krishna Sajeev.jpg" alt=""></div>
+                    <h4 class="name">Krishna Sajeev</h4>
+                    <p class="role">Competitive Programming Manager</p>
+                    <p class="info">
+                        Tech Enthusiast | Loves to do Calligraphy
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/krishna-sajeev-b36480194/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/krishnasajeeva"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/krishnasajeeva/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Anmol Arora.jpg" alt=""></div>
+                    <h4 class="name">Anmol Arora</h4>
+                    <p class="role">Competitive Programming Manager</p>
+                    <p class="info">
+                        Football addict | Loves competitive coding | Watching movies especially romcom😂
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/anmol-arora-bb3a481b0/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.instagram.com/a.n.m.o.l.__/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Chhavi Mainwall.jpg" alt=""></div>
+                    <h4 class="name">Chhavi Mainwall</h4>
+                    <p class="role">Competitive Programming Manager</p>
+                    <p class="info">
+                        Like Socializing | Good at painting
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://github.com/Chhavimainwall10"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/__chhavi_mainwall__/"><i class=" fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100004848919010"><i class=" fab fa-facebook-square"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="mem-card">
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Deepali.jpeg" alt=""></div>
-                <h4 class="name">Deepali Mathur</h4>
-                <p class="role">Event Management and IoT</p>
-                <p class="info">
-                    Loves to do Art | Calligraphy | swimming
-                </p>
-                <ul class="social">
-                    <li><a href="https://instagram.com/deepali.mathur14/"><i class=" fab fa-instagram"></i></a></li>
-                </ul>
+
+
+        <div class="team-border" style="margin-bottom: 20px;margin-top: 20px;"></div>
+
+        <div class="big_button">
+            <button class="button1 button" onclick="myFunction('past_myDIVContent')" type="button">EVENT MANAGEMENT</button>
+        </div>
+        <!--Event-->
+        <div id="past_myDIVContent" style="display: none;">
+            <div class="lead-card">
+                <div class="card ">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Satyam Bhardwaj.jpg" alt=""></div>
+                    <h4 class="name">Satyam Bhardwaj</h4>
+                    <p class="role">Event Management Team Head</p>
+                    <p class="info">
+                        Basketball Player | Tech lover | Public Speaker
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/satyam-bhardwaj-6158141b6"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/Satyam124421"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Reetika Singh.jpeg" alt=""></div>
-                <h4 class="name">Reetika Singh</h4>
-                <p class="role">IOT Manager</p>
-                <p class="info">
-                   Just another tech student...
-                </p>
-                <ul class="social">
-				  <li><a href="https://www.linkedin.com/in/reetika-singh-a74a17197"><i class="fab fa-linkedin-in"></i></a></li> 
-				   <li><a href=" https://github.com/PoiuReetika"><i class="fab fa-github"></i></a></li> 
-				   <li><a href="https://instagram.com/_reetikasingh_/"><i class=" fab fa-instagram"></i></a></li>
-                </ul>
+            <div class="mem-card">
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Aditya.jpg" alt=""></div>
+                    <h4 class="name">Aditya Gupta</h4>
+                    <p class="role">Event Manager</p>
+                    <p class="info">
+                        Tech Explorer | Singer
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/aditya-gupta-638bb7147"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/whyadiwhy"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/_whyadiwhy/"><i class=" fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Vasu.jpg" alt=""></div>
+                    <h4 class="name">Vasu Agarwal</h4>
+                    <p class="role">Event manager</p>
+                    <p class="info">
+                        Traveller | Football addict | Swimmer
+                        <br>Intrested in robotics | IOT| Photography
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.instagram.com/coderflare11/"><i class=" fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/vasu.agarwal.9212"><i class=" fab fa-facebook-square"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Dhruv yadav.jpg" alt=""></div>
-                <h4 class="name">Dhruv</h4>
-                <p class="role"><br></p>
-                <p class="info">
-                    <br>
-                </p>
-                <ul class="social">
-                    <!-- <li><a href="#""><i class=" fab fa-facebook-square"></i></a></li>
+        </div>
+        <div class="team-border" style="margin-bottom: 20px;margin-top: 20px;"></div>
+
+        <div class="big_button">
+            <button class="button1 button" onclick="myFunction('past_myDIVIot')" type="button">IOT TEAM</button>
+        </div>
+        <!--IoT-->
+        <div id="past_myDIVIot" style="display: none;">
+            <div class="lead-card">
+                <div class="card ">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Fahad khan.jpg" alt=""></div>
+                    <h4 class="name">Fahad Ali Khan</h4>
+                    <p class="role">IoT Team Head</p>
+                    <p class="info">
+                        I like to code and i give competitive programming contest regularly <br>and i have great interest in cricket.
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/fahad-ali-khan-86976814b"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/fahadkhaanz"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/fahadkhannz/"><i class=" fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mem-card">
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Deepali.jpeg" alt=""></div>
+                    <h4 class="name">Deepali Mathur</h4>
+                    <p class="role">Event Management and IoT</p>
+                    <p class="info">
+                        Loves to do Art | Calligraphy | swimming
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://github.com/deepali46"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/deepali-mathur-23193218b"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:it19065@glbitm.ac.in"><i style="color: #e6683c;" class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Reetika Singh.jpeg" alt=""></div>
+                    <h4 class="name">Reetika Singh</h4>
+                    <p class="role">IOT Manager</p>
+                    <p class="info">
+                        Just another tech student...
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/reetika-singh-a74a17197"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href=" https://github.com/PoiuReetika"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://instagram.com/_reetikasingh_/"><i class=" fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Dhruv yadav.jpg" alt=""></div>
+                    <h4 class="name">Dhruv</h4>
+                    <p class="role"><br></p>
+                    <p class="info">
+                        <br>
+                    </p>
+                    <ul class="social">
+                        <!-- <li><a href="#""><i class=" fab fa-facebook-square"></i></a></li>
                     <li><a href="#""><i class=" fab fa-twitter-square"></i></a></li>
                     <li><a href="#""><i class=" fab fa-instagram"></i></a></li> -->
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
-            <div class="team-border"></div>
+        <div class="team-border" style="margin-bottom: 20px;margin-top: 20px;"></div>
 
-            <!--Content Manager-->
+        <div class="big_button">
+            <button class="button1 button" onclick="myFunction('past_myDIVEvent')" type="button">CONTENT TEAM</button>
+        </div>
+        <!--Content Manager-->
+        <div id="past_myDIVEvent" style="display: none;">
             <div class="lead-card">
                 <div class="card ">
                     <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Kavya.jpeg" alt=""></div>
                     <h4 class="name">Kavya Agarwal</h4>
                     <p class="role">Content Head</p>
                     <p class="info">
-                        I like gaining knowledge about new technologies. <br>I like interacting with people as well as listening music <br>and gaining some  other knowledge.
-			
+                        I like gaining knowledge about new technologies. <br>I like interacting with people as well as listening music <br>and gaining some other knowledge.
+
                     </p>
                     <ul class="social">
                         <li><a href="https://instagram.com/kavyaagrawal71/"><i class=" fab fa-instagram"></i></a></li>
-                        
+
                     </ul>
                 </div>
             </div>
-        <div class="mem-card">
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Aayushi awasthi.jpg" alt=""></div>
-                <h4 class="name">Ayushi Awasthi</h4>
-                <p class="role">Content Manager</p>
-                <p class="info">
-                   I like to learn foreign languages, love to travel and explore new things.
-                </p>
-                <ul class="social">
-				  <li><a href="https://github.com/aayushi211999"><i class="fab fa-github"></i></a></li>
-                    <li><a href=" https://www.instagram.com/a_natural_mess_/"><i class=" fab fa-instagram"></i></a></li>
-					 <li><a href="http://facebook.com/aayushi.awasthi.21"><i class=" fab fa-facebook-square"></i></a></li>
-                </ul>
-            </div>
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Sakshi Agrawal.jpg" alt=""></div>
-                <h4 class="name">Sakshi</h4>
-                <p class="role">Content Manager</p>
-                <p class="info">
-                   Adventure lover, like to explore new things, have fun with friends.
-                </p>
-                <ul class="social">
-                </ul>
+            <div class="mem-card">
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Aayushi awasthi.jpg" alt=""></div>
+                    <h4 class="name">Ayushi Awasthi</h4>
+                    <p class="role">Content Manager</p>
+                    <p class="info">
+                        I like to learn foreign languages, love to travel and explore new things.
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://github.com/aayushi211999"><i class="fab fa-github"></i></a></li>
+                        <li><a href=" https://www.instagram.com/a_natural_mess_/"><i class=" fab fa-instagram"></i></a></li>
+                        <li><a href="http://facebook.com/aayushi.awasthi.21"><i class=" fab fa-facebook-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Sakshi Agrawal.jpg" alt=""></div>
+                    <h4 class="name">Sakshi</h4>
+                    <p class="role">Content Manager</p>
+                    <p class="info">
+                        Adventure lover, like to explore new things, have fun with friends.
+                    </p>
+                    <ul class="social">
+                    </ul>
+                </div>
             </div>
         </div>
-            <div class="team-border"></div>
+        <div class="team-border" style="margin-bottom: 20px;margin-top: 20px;"></div>
+        <div class="big_button">
+            <button class="button1 button" onclick="myFunction('past_myDIVCreative')" type="button">CREATIVE TEAM</button>
+        </div>
 
-            <!--Creative-->
+        <!--Creative-->
+        <div id="past_myDIVCreative" style="display: none;">
             <div class="lead-card">
                 <div class="card ">
                     <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Rupali Singh.jpeg" alt=""></div>
@@ -594,129 +1084,211 @@
                     <p class="info">
                         Interested in Designing.
                     </p>
-                    <ul class="social"> 
-                        <li><a href="https://www.linkedin.com/in/rupali-singh-b0941818b"><i class="fab fa-linkedin-in"></i></a></li> 
-						 <li><a href="https://www.instagram.com/_miserable_magical_/"><i class=" fab fa-instagram"></i></a></li>
-                        
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/rupali-singh-b0941818b"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.instagram.com/_miserable_magical_/"><i class=" fab fa-instagram"></i></a></li>
+
                     </ul>
                 </div>
             </div>
-        <div class="mem-card">
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Ashutosh Singh.png" alt=""></div>
-                <h4 class="name">Ashutosh Singh</h4>
-                <p class="role">Creative Manager</p>
-                <p class="info">
-                  Graphic Designer | Web Designer | Tech Enthusiast
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.linkedin.com/in/ashutosh-singh-bb1253194"><i class="fab fa-linkedin-in"></i></a></li> 
-						 <li><a href="https://www.instagram.com/ashutoshsinghshrinet/"><i class=" fab fa-instagram"></i></a></li>
-						 <li><a href="https://www.facebook.com/ashoutosh.singh.92"><i class=" fab fa-facebook-square"></i></a></li>
-						 
-                        
-                </ul>
-            </div>
-			 <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Rahul Katiyar.jpg" alt=""></div>
-                <h4 class="name">Rahul Katiyar</h4>
-                <p class="role">Creative Manager</p>
-                <p class="info">
-                 Likes to play basketball, but doesn't know how to dribble
-                </p>
-                <ul class="social">
-                    
-                    <li><a href="https://www.instagram.com/rahulkatiyar.ig/"><i class=" fab fa-instagram"></i></a></li>
-                </ul>
-            </div> 
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Sonia.jpeg" alt=""></div>
-                <h4 class="name">Sonia</h4>
-                <p class="role">Creative Manager</p>
-                <p class="info">
-                   Adventurous, listening music and making new friends.
-                </p>
-                <ul class="social">
-                    <li><a href="https://www.instagram.com/Soniasharma257/"><i class=" fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <div class="m-card">
-                <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Abhishek Sharma.jpeg" alt=""></div>
-                <h4 class="name">Abhishek Sharma</h4>
-                <p class="role">Creative Manager</p>
-                <p class="info">
-                    Interested in designing and 3d-modeling
-                </p>
-                <ul class="social">
-				<li><a href=" https://www.linkedin.com/in/abhishek-sharma-521110168"><i class="fab fa-linkedin-in"></i></a></li> 
-				 <li><a href="https://github.com/codefive9abhi"><i class="fab fa-github"></i></a></li>
-				  <li><a href="https://www.instagram.com/codefive9.abhi/"><i class=" fab fa-instagram"></i></a></li>
-                    
-                </ul>
+            <div class="mem-card">
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Ashutosh Singh.png" alt=""></div>
+                    <h4 class="name">Ashutosh Singh</h4>
+                    <p class="role">Creative Manager</p>
+                    <p class="info">
+                        Graphic Designer | Web Designer | Tech Enthusiast
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/ashutosh-singh-bb1253194"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.instagram.com/ashutoshsinghshrinet/"><i class=" fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/ashoutosh.singh.92"><i class=" fab fa-facebook-square"></i></a></li>
+
+
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Rahul Katiyar.jpg" alt=""></div>
+                    <h4 class="name">Rahul Katiyar</h4>
+                    <p class="role">Creative Manager</p>
+                    <p class="info">
+                        Likes to play basketball, but doesn't know how to dribble
+                    </p>
+                    <ul class="social">
+
+                        <li><a href="https://www.instagram.com/rahulkatiyar.ig/"><i class=" fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Sonia.jpeg" alt=""></div>
+                    <h4 class="name">Sonia</h4>
+                    <p class="role">Creative Manager</p>
+                    <p class="info">
+                        Adventurous, listening music and making new friends.
+                    </p>
+                    <ul class="social">
+                        <li><a href="https://www.instagram.com/Soniasharma257/"><i class=" fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="m-card">
+                    <div class="card-avatar"><img class="pro-img" src="../../assets/img/Team-Avatar/Abhishek Sharma.jpeg" alt=""></div>
+                    <h4 class="name">Abhishek Sharma</h4>
+                    <p class="role">Creative Manager</p>
+                    <p class="info">
+                        Interested in designing and 3d-modeling
+                    </p>
+                    <ul class="social">
+                        <li><a href=" https://www.linkedin.com/in/abhishek-sharma-521110168"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/codefive9abhi"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/codefive9.abhi/"><i class=" fab fa-instagram"></i></a></li>
+
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer id="footer">
+    <hr>
 
-        <div class="footer-top">
-    
-          <div class="container" data-aos="fade-up">
-           
-    <div class="col-lg-4 col-md-6 footer-links">
-                <h4> Links</h4>
-                <ul>
-                  <li><a href="../../index.html">Home</a></li>
-                  <li><a href="../../index.html#about-section">About us</a></li>
-                  <li><a href="event.html">Events</a></li>
-                  <li><a href="team.html">Our team</a></li>
-                </ul>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 footer-newsletter" style="font-style:normal;">
-                <h4>Our College</h4>
-                <p>
-                 G.L. Bajaj Institute of Technology and Management<br>
-                 Plot No. 2, Knowledge Park III, Greater Noida, Uttar Pradesh 201306<br>
-                 India
-                </p>
-          </div>
-           <div class="col-lg-4 col-md-6 footer-newsletter" style="font-style:normal;">
-                <h4>Follow Us On</h4>
-                
-                <div class="social-links list-unstyled">
 
-                <a href="https://www.linkedin.com/company/innovo-infinity">
-                  <img src="..//fonts/Footer-icon/ln.png" width="35px" height="35px">
-                </a>
-                <a href="https://github.com/innovo-infinity">
-                  <img src="..//fonts/Footer-icon/github.png" width="35px" height="35px">
-                </a>
-                <a href="https://twitter.com/innovo_infinity/">
-                    <img src="..//fonts/Footer-icon/twitter.png" width="45px" height="35px">
-                </a>
-                <a href="https://www.instagram.com/innovo_infinity/">
-                  <img src="..//fonts/Footer-icon/insta.png" width="35px" height="35px">
-                </a>
-                <a href="https://www.facebook.com/innovo.infinity/">
-                    <img src="..//fonts/Footer-icon/fb.png" width="35px" height="35px">
-                  </a>
-                  <a href="https://youtube.com/channel/UCzqg7cLOQgYCosD5P-ahuPA">
-                    <img src="..//fonts/Footer-icon/yt.png" width="40px" height="35px">
-                  </a>
-              </div>
-          </div>
-        </div>
-    
-        <div class="container footer-bottom clearfix">
-          <div class="copyright">
-           <i> &copy; Copyright <strong><span>INNOVO INFINITY</span></strong>. All Rights Reserved</i>
-          </div>
-         
-      </footer><!-- End Footer -->
 
+
+
+    <footer id="footer" style="background-color: black;">
+
+        <div style="padding-bottom: 0;" class="footer-top">
+
+            <div class="container" data-aos="fade-up">
+
+                <!-- <div class="col-lg-4 col-md-6 footer-links">
+                    <h4> Links</h4>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../index.html#about-section">About us</a></li>
+                        <li><a href="event.html">Events</a></li>
+                        <li><a href="team.html">Our team</a></li>
+                    </ul>
+                </div> -->
+
+                <div class="col-lg-4 col-md-6 footer-newsletter" style="font-style:normal;">
+                    <h4 style="color: #a9a9a9; margin-bottom: 30px;"> Our College</h4>
+                    <p style="color: white;">
+                        G.L. Bajaj Institute of Technology and Management<br> Plot No. 2, Knowledge Park III, Greater Noida, Uttar Pradesh 201306<br> India
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 footer-newsletter" style="font-style:normal;">
+                    <h4 style="color: #a9a9a9; margin-bottom: 30px;">Follow Us On</h4>
+
+                    <div class="social-links list-unstyled">
+
+                        <a href="https://www.linkedin.com/company/innovo-infinity">
+                            <img src="..//fonts/Footer-icon/ln.png" width="35px" height="35px">
+                        </a>
+                        <a href="https://github.com/innovo-infinity">
+                            <img style="background-color: white; border-radius: 50%;" src="..//fonts/Footer-icon/github.png" width="35px" height="35px">
+                        </a>
+                        <a href="https://twitter.com/innovo_infinity/">
+                            <img src="..//fonts/Footer-icon/twitter.png" width="45px" height="35px">
+                        </a>
+                        <a href="https://www.instagram.com/innovo_infinity/">
+                            <img src="..//fonts/Footer-icon/insta.png" width="35px" height="35px">
+                        </a>
+                        <a href="https://www.facebook.com/innovo.infinity/">
+                            <img src="..//fonts/Footer-icon/fb.png" width="35px" height="35px">
+                        </a>
+                        <a href="https://youtube.com/channel/UCzqg7cLOQgYCosD5P-ahuPA">
+                            <img src="..//fonts/Footer-icon/yt.png" width="40px" height="35px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container footer-bottom clearfix">
+                <div class="copyright" style="color: white;">
+                    <i> &copy; Copyright <strong><span>INNOVO INFINITY</span></strong>. All Rights Reserved</i>
+                </div>
+
+    </footer>
+    <!-- End Footer -->
+    <script>
+        function myFunction(str) {
+            // var x = document.getElementById("myDIV");
+            console.log(str);
+            var x = document.getElementById(str);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        // function myFunctionWeb() {
+        //     var x = document.getElementById("myDIVWeb");
+        //     if (x.style.display === "none") {
+        //         x.style.display = "block";
+        //     } else {
+        //         x.style.display = "none";
+        //     }
+        // }
+
+        // function myFunctionAi() {
+        //     var x = document.getElementById("myDIVAi");
+        //     if (x.style.display === "none") {
+        //         x.style.display = "block";
+        //     } else {
+        //         x.style.display = "none";
+        //     }
+        // }
+
+        // function myFunctionCp() {
+        //     var x = document.getElementById("myDIVCp");
+        //     if (x.style.display === "none") {
+        //         x.style.display = "block";
+        //     } else {
+        //         x.style.display = "none";
+        //     }
+        // }
+
+        // function myFunctionContent() {
+        //     var x = document.getElementById("myDIVContent");
+        //     if (x.style.display === "none") {
+        //         x.style.display = "block";
+        //     } else {
+        //         x.style.display = "none";
+        //     }
+        // }
+
+
+        // function myFunctionIot() {
+        //     var x = document.getElementById("myDIVIot");
+        //     if (x.style.display === "none") {
+        //         x.style.display = "block";
+        //     } else {
+        //         x.style.display = "none";
+        //     }
+        // }
+
+        // function myFunctionEvent() {
+        //     var x = document.getElementById("myDIVEvent");
+        //     if (x.style.display === "none") {
+        //         x.style.display = "block";
+        //     } else {
+        //         x.style.display = "none";
+        //     }
+        // }
+
+        // function myFunctionCreative() {
+        var x = document.getElementById("myDIVCreative");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    </script>
     <script src="../javaScript/nav.js"></script>
     <script src="../javaScript/testimonial.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
