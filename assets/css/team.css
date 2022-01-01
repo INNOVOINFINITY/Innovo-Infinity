@@ -225,8 +225,8 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 2rem 0;
-    margin-top: 1.5rem;
+    /* padding: 2rem 0; */
+    /* margin-top: 1.5rem; */
     z-index: 1;
 }
 
